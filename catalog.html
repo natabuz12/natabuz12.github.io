@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+    
+    $( document ).ready(function() {
+        $('.client_list').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+
+  prevArrow:"<img class='sli12-scu sli12-scu-left' src='slider-arrow_left.png'>",
+            nextArrow:"<img class='sli12-scu sli12-scu-right' src='slider-arrow_right.png'>",
+
+  responsive: [
+    {
+      breakpoint: 1294,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+});
+    
+
+    </script>
+
+    <style>
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+.imgmap1{
+    max-width: 100%;width: 100%;
+}
+.sli12-scu{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 43px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+.sli12-scu-left{
+    left: -45px;
+}
+
+.sli12-scu-right{
+    right: -45px;
+}
+.our_clients-block{
+
+}
+.our_clients-block .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #39b883;
+}
+.question_form-upheader{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.question-left_form{
+    background-color: #232d43;
+    margin-top: 140px;
+    padding-bottom: 80px;
+}
+.question-left_form .site_form-1{
+text-align: center;
+}
+
+.question_form-header{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 80px;
+    color: white;padding-top: 66px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+
+    box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'GothamPro';
+  src:  url('source/GothamPro.eot');
+  src:  url('source/GothamPro.eot') format('embedded-opentype'),
+    url('source/GothamPro.woff') format('woff'),
+    url('source/GothamPro.ttf') format('truetype'),
+    url('source/GothamPro.svg') format('svg');
+}
+
+@font-face{
+  font-family: 'GothamProMedium';
+  src:  url('source/GothamPro-Medium.eot');
+  src:  url('source/GothamPro-Medium.eot') format('embedded-opentype'),
+    url('source/GothamPro-Medium.woff') format('woff'),
+    url('source/gothampro_medium.ttf') format('truetype'),
+    url('source/GothamPro-Medium.svg') format('svg');
+}
+
+body{font-family: "GothamProMedium";}
+.effective_plan-info {margin-top: 60px;}
+.header{
+    padding-top: 50px;
+    color: #ffffff;
+    background: url('backgorund_main.png') no-repeat center top fixed;
+        -webkit-background-size: cover;
+        background-position-y: -100px;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        padding-bottom: 100px;
+}
+.container{max-width: 1200px; margin: 0 auto;}
+
+.nav_menu {display: flex; justify-content: space-between;align-items: center;}
+.menu_block{display:flex;}
+.menu_block li{margin-left: 36px;}
+.menu_block a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.phone_header{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+.phone_info-block{
+    display: flex;
+    flex-direction: column;
+}
+.email_header{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: right;
+}
+.main_site-info{padding-top: 190px; margin: 0 auto; text-align: center;
+max-width: 900px;line-height: 56px;} 
+h1{ text-transform: uppercase;
+font-size: 50px;
+}
+.after_header-title{
+    
+    font-size: 24px;line-height:30px;
+    padding-top: 20px;max-width: 520px;
+    margin: 0 auto;
+}
+.main_site-info h3{
+    font-size: 17px;
+}
+.site_main-form{padding-top: 80px; margin: 0 auto; text-align: center;}
+.inp-form{width: 260px; height: 72px; margin-right: 10px; border-radius: 40px; color: #ffffff; border-color: white; padding: 20px;background-color: transparent;}
+.site_form-1{margin-top: 25px;}
+.site_main-form h2{
+max-width: 340px;
+margin: 0 auto;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #ffffff;
+    font-size: 16px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+   opacity:  1; font-size: 16px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+   opacity:  1; font-size: 16px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff; font-size: 16px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff; font-size: 16px;
+}
+::placeholder { /* Most modern browsers support this now. */
+    color: #ffffff; font-size:16px;
+}
+.consult_btn{
+    background-color: #39b883;
+    padding: 20px;border-radius: 40px; color: #ffffff; font-size: 14px;
+    border: none;
+    outline: none;
+    width: 260px; height: 72px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.icon_inp{padding-left: 52px;}
+.icon_inp{
+    background-image: url(russia1.png);   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: 20px; /*Позиционируем*/
+}
+.header_effective{
+font-size: 36px;
+max-width: 700px;
+line-height: 44px;
+}
+.header_effective span{
+    color: #39b883;
+
+}
+section{
+    /*margin-top: 80px;*/
+}
+.features-effective-list{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.feature-item p{
+    width: 180px;
+    padding-top: 15px;
+    font-family: "GothamPro";
+}
+.integration_text-info{
+    margin-bottom: -2px;
+    margin-top: 60px;
+background-color: #f4f6fa;
+}
+.inegrity-items{
+    position: relative;
+}
+.header_integration{
+    font-size: 32px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 60px;
+    line-height: 44px;
+    padding-bottom: 30px;
+   /* border-bottom: 1px solid #39b883;*/
+}
+.text-integr{
+    max-width: 780px;
+    position: absolute;
+    top: 200px;
+    right: 200px;font-family: "GothamPro";
+    line-height: 28px;
+    font-size: 18px;
+   
+}
+.btn_site{
+    border-radius: 40px;
+    background-color: #39b883;
+    text-decoration: none;
+    margin-top: 50px;
+    display: block;
+    color: white;
+    width: 346px;
+    padding: 30px 50px 30px 30px;
+}
+.width_line1{ width: 254px; height: 2px; background-color: #39b883; margin: 0 auto} 
+.text-integr>p{ margin-bottom: 40px;}
+.podbor_list{    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_podbor{font-size: 40px; color: #ffffff;padding-top: 60px; margin: 0 auto; text-align: center; text-transform: uppercase;
+max-width: 750px;
+}
+.podbor_text-info{ background-color: #232d43; padding-bottom: 70px;}
+.podbor_list p{width: 225px;}
+.btn_site {
+    position: relative;
+}
+.btn_site:after{
+    content: "";
+    position: absolute;
+    background-image: url(rightsv.svg);
+    background-size: cover;
+    width: 35px;
+    height: 36px;
+    fill: orange;
+    color: whitesmoke;
+    right: 47px;
+    top: 27px;
+}
+.header_after-podobor, .header_after-offer{
+    color: #ffffff;
+    max-width: 388px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+.header_after-offer{color: black;}
+.item_list p{
+    color: #ffffff;
+    padding-top: 15px;
+}
+.podbor_takealook{
+    margin-top: 15px;
+    display: block;
+    width: 180px;
+    color: #39b883;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.podbor_takealook:after{
+    content: "";
+    position: absolute;
+    background-image: url(rightsv1.svg);
+    background-size: cover;
+    width: 35px;
+    height: 36px;
+    fill: orange;
+    color: whitesmoke;
+    right: 47px;
+    top: -10px;
+}
+
+.realised_header, .offer_header{padding-bottom: 30px; padding-top: 50px; max-width: 630px;
+font-size: 32px;
+line-height:36px;
+ margin: 0 auto;
+ text-align: center;
+}
+.realised_solution{
+    padding-bottom: 80px;
+}
+.solution_list{margin-top: 60px;}
+.sol_item h3, .sol_item h4{
+    color:#39b883; margin-bottom: 10px;  line-height: 28px;
+}
+.sol_item{font-family: "GothamPro";}
+.sol_item h3{font-size: 18px;
+    max-width: 360px;
+}
+.sol_item  p{
+    line-height: 30px;
+}
+.sol1{ width: 70% }
+
+.itemsol {
+
+}
+.solution_list,.itemsol{display: flex; justify-content: space-between;}
+
+.sol2 {border-top: 3px dotted #c0c0c0;display: flex;
+    flex-direction: column;width: 26%;}
+
+.itemsol{padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    border-bottom:3px dotted #c0c0c0;
+    font-weight: 800;
+}
+.itemsolinside{
+    line-height: 30px;
+    width: 215px;
+}
+.pricesol{
+    color: #39b883;
+}
+.lookcase_btn{
+    border-radius: 40px;
+    background-color: #39b883;
+    text-decoration: none;
+    margin-top: 50px;
+    display: block;
+    color: white;    align-self: end;
+    width: 276px;
+    padding: 30px 50px 30px 30px;
+    position: relative;
+}
+.lookcase_btn:after{
+    content: "";
+    position: absolute;
+    background-image: url(reload.png);
+    background-size: cover;
+    width: 26px;
+    height: 27px;
+    fill: orange;
+    color: whitesmoke;
+    right: 29px;
+    top: 23px;
+}
+.offer_block{
+    background-color: #f3f6f9;
+    padding-bottom: 150px;
+}
+.slick-dots{
+    bottom: -90px;
+}
+.podheader_clients{
+    max-width: 436px;
+    padding-bottom: 129px;
+    margin: 0 auto;
+}
+.header_after-offer{
+    margin-top: 0px;
+}
+.offer_header{
+    font-family: "GothamPro";
+}
+.offer_header-item{
+    padding-bottom: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #39b883;
+   font-family: "GothamPro";
+}
+.offer_block-list{display: flex; justify-content: space-between;  padding-top: 90px;}
+.plus{
+    font-size: 42px;
+    align-self: center; font-family: "GothamPro";
+    font-weight: 300;
+    color: #39b883
+}
+.offer_item p{    max-width: 199px;}
+.header_how
+{
+    padding-bottom: 80px;
+    padding-top: 110px;
+    margin: 0 auto;
+    max-width: 274px;
+    line-height: 40px;
+    text-align: center; font-family: "GothamPro";
+    font-size: 32px;
+}
+
+.header-how_works{
+    font-size: 46px;
+    text-align: right;
+    color: #39b883;
+}
+.how_works-list{display: flex; flex-wrap: wrap; gap: 20px}
+
+.how_works_list-item{
+    height: 249px;
+    background-color: white;
+    padding: 38px 35px;
+}
+
+.text-offer{
+    max-width: 120px;
+    line-height: 25px;
+    padding-top: 50px;
+}
+.how_works_list-item{
+    border-radius: 40px;
+}
+.header_clients{
+    font-size: 36px;
+text-align: center;
+    padding-top: 60px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    /*margin-bottom: 40px;*/
+}
+.map_block{position: relative;}
+.imgmap1 {position: absolute;     z-index: -100; }
+.header_map {background-color: white; border-radius: 30px; width: 500px; padding: 40px; margin-top: 80px;} 
+.flexfooter1 {
+    display: flex;
+    justify-content: flex-end;
+}
+.srsd {margin-bottom: 60px;}
+.header_map_item{
+    margin-bottom: 15px;
+
+}
+.header_map_item p{
+    color: #39b883;font-size: 16px;
+
+}
+.header_map_item a{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-top: 8px;
+    display: block;
+}
+
+
+@media screen and (min-width:1366px) and (max-width:1660px) {
+    .text-integr {right: 0px;}
+}
+
+
+@media screen  and (max-width:1032px) {
+    .nav_menu { flex-direction: column;gap: 13px; }
+
+    h1 {
+  
+    font-size: 36px;
+}
+
+.site_form-1 {
+    margin-top: 25px;
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.header_effective {
+    font-size: 36px;
+    max-width: 100%;
+    line-height: 44px;
+    text-align: center;
+}
+
+.features-effective-list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+}
+
+
+@media screen  and (max-width:1365px) {
+    .container1{padding: 5px;}
+    .container{padding: 5px;}
+    .inegrity-items {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+.text-integr{position: unset;max-width: 100%;}
+
+}
+
+
+@media screen  and (max-width:1240px) {
+    .header{background-position-y: 0px;}
+
+.offer_block-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+}
+
+    .integrity_img img{max-width: 100%;}
+
+    .podbor_list {
+    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.sol2 {
+    border-top: 3px dotted #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sol1 {
+    width: 100%;
+}
+.solution_list, .itemsol{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+}
+
+@media screen  and (max-width:675px) {
+
+    .srsd {
+    margin-bottom: 60px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+    .podheader_clients{text-align: center;}
+.sli12-scu{display: none!important;}
+    .how_works-list > div{
+        width: 100%!important;
+        max-width: 100%;
+    }
+.header_integration{font-size: 24px;}
+    .header_podbor{
+        font-size: 24px;
+    }
+    .header_effective{font-size: 24px;}
+    .menu_block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.main_site-info{padding-top: 40px;}
+h1{font-size: 24px; line-height: 28px;}
+}
+
+.heade-page{
+    background: none;
+    background-color: #232d43;
+    padding-bottom: 50px;
+}
+.detail_product{
+    padding-top: 80px;
+}
+.header_product-block{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header_product{
+    text-transform: capitalize;
+}
+.header_product-block img{
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.detail_product .width_line1 {
+    width: 224px;
+    height: 2px;
+    background-color: #39b883;
+    /* margin: 0 auto; */
+    margin-left: 7px;
+    margin-top: 24px;
+}
+
+.item_container{
+    margin-top: 80px;
+}
+.sidebar_left{
+    padding: 40px 28px;
+    background-color: white; 
+}
+
+.sidebar_left {
+    width: 26%;
+    border-radius:25px;
+}
+
+.item_info-block{
+    width: 70%;
+}
+
+.item_container{display: flex; justify-content: space-between;}
+
+.manufacture_name{
+    color: #39b883;
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+.detail_product{
+    background-color: #f4f6fa;
+    padding-bottom: 70px;
+}
+.manf_item{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+    font-family: "GothamPro";
+}
+.line_get{
+    border-bottom: 1px solid #39b883;
+}
+.item_manf-cp{
+    padding-bottom: 25px;
+}
+.item_manf-cp + .item_manf-cp{
+    margin-top: 20px;
+}
+.detail_product-img{
+    background-color: #ffffff;
+    padding: 10px;   text-align: center;
+}
+
+ 
+.detail_product-img img{
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+ 
+}
+.detail_info-block{
+    margin-top: 40px;
+
+    font-family: "GothamPro";
+}
+.header_title-product{
+    font-size: 28px;
+
+    color: #39b883;
+    text-transform: capitalize;
+
+  
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+.description_detail{
+    line-height: 32px;
+    font-size: 14px;
+}
+
+
+table.iksweb{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    border-top: 1px solid #bfc4cb;
+
+}
+table.iksweb,table.iksweb td, table.iksweb th {
+	border-bottom: 1px solid #bfc4cb;
+}
+table.iksweb td,table.iksweb th {
+	padding: 13px;
+	width: 30px;
+	height: 35px;
+}
+table.iksweb th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+}
+table.iksweb td:nth-child(2){
+    font-weight: 800;
+}
+.relative_items{
+    padding-top: 100px;
+    background-color: #f4f6fa;
+}
+.relative_header-title{
+    text-align: center;
+}
+.relative_header-title{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "GothamPro";
+    font-weight: 600;
+}
+.relative-item img{
+    max-width: 100%;
+}
+.relative-item{
+    padding: 28px;
+    font-family: "GothamPro";
+    background-color: #ffffff;
+    max-width: 380px;
+    border-radius: 33px;
+}
+.relative-item_title{
+    font-size: 20px;
+    color: #39b883;
+    line-height: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.h_name,.h_value{
+    margin-bottom: 8px;
+}
+.h_block-pro{
+    margin-bottom: 10px;
+}
+.bd_pro{
+    border-bottom: 1px solid #c8cad0;
+}
+.pro_h1{
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.relative_items{
+    padding-bottom: 80px;
+}
+.pro_h1:after{
+    right: 31px;
+    top: 22px;
+}
+.relative_item-list{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.non_se .question_form-header{
+    margin-top: 0px;
+
+}
+
+
+.non_se.question-left_form{
+    margin-top: 0px;
+
+}
+.sada123{
+    max-width: 528px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+@media screen  and (max-width:1194px) {
+
+    .item_container {display: block;}
+    .sidebar_left {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.item_info-block {
+    width: 100%;
+}
+
+.relative_item-list {
+  
+    gap: 10px;
+   
+}
+
+
+
+}
+
+
+@media screen  and (max-width:798px) {
+    .relative_item-list {
+
+    flex-direction: column;
+}
+
+.relative-item{max-width: 100%;}
+
+}
+
+@media screen  and (max-width:456px) {
+    .header_product-block img {
+    object-fit: contain;
+    max-width: 50%;
+}
+
+.header_product-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+}
+
+.catalog_product .header_product{
+    max-width: 360px;
+    text-transform: none;
+}
+
+.catalog_product .width_line1{width: 100%}
+
+.catalog_product_item{
+    max-width: 380px;
+}
+.catalog_product  .manufacture_name{
+    max-width: 280px;
+}
+
+.catalog_product  .sidebar_left{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.catalog_product  .item_manf-cp + .item_manf-cp {
+    margin-top: 0px;
+}
+
+
+.catalog_product .line_get {
+    border-bottom: none;
+}
+.detail_product.catalog_product{
+    background-color: #f4f6fa;
+}
+.inssada2 {display: flex; gap: 48px}
+
+.spisok_cat-items .relative_item-list
+     {
+    margin-top: 0px;
+    flex-wrap: wrap;
+    gap: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spisok_cat-items.relative_items {
+    padding-top: 0px;
+}
+.cat1.our_clients-block {
+    margin-bottom: 173px;
+}
+
+
+@media screen  and (max-width:1365px) {
+
+    .spisok_cat-items .relative-item {
+    padding: 28px;
+    font-family: "GothamPro";
+    background-color: #ffffff;
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 33px;
+}
+
+@media screen  and (max-width:938px) {
+    .catalog_product .sidebar_left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+}
+
+
+@media screen  and (max-width:938px) {
+
+    .spisok_cat-items .relative-item{max-width: 100%;}
+
+}
+
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header class="header heade-page">
+        <div class="container">
+            <div class="nav_menu">
+                <a href="#">
+                    <img src="logo.png">
+                </a>
+                <ul class="menu_block">                        
+                    <li><a href="#">Оборудование</a></li>
+                    <li>Консалтинг</li>
+                    <li>Кейсы</li>
+                    <li>Расходные материалы</li>
+                </ul>
+                <div class="phone_info-block">
+                    <a class="phone_header" href="tel:79764121231">
+                        8 (4722) 40-22-44 
+                    </a>
+                    <a class="email_header" href="mail:sovet@gksovet.ru">
+                        sovet@gksovet.ru
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section class="detail_product catalog_product">
+
+        <div class="container">
+
+            <div class="header_product-block">
+                <h1 class="header_product">Каталог
+                    оборудования</h1>
+                
+            </div>
+
+            <div class="width_line1">
+
+            </div> 
+
+        <div class="item_container">
+
+                <div class="sidebar_left">
+
+                    <div class="item_manf-cp line_get catalog_product_item">
+
+                    <h2 class="manufacture_name">Решения для мебельных  и деревообрабатывающих  производств</h2>
+
+                    <a class="manf_item" href="#">Emmedue</a>
+
+                    <a class="manf_item" href="#">Marmo meccanica</a>
+
+                    <a class="manf_item" href="#">Dal prete</a>
+
+                    <a class="manf_item" href="#">Waterjet italiano</a>
+
+                    <a class="manf_item" href="#">Xianda</a>
+                </div>
+
+
+                <div class="item_manf-cp line_get">
+
+                    <h2 class="manufacture_name">Решения для 
+                        камнеобрабатывающих
+                        производств</h2>
+
+                    <a class="manf_item" href="#">Emmedue</a>
+
+                    <a class="manf_item" href="#">Marmo meccanica</a>
+
+                    <a class="manf_item" href="#">Dal prete</a>
+
+                    <a class="manf_item" href="#">Waterjet italiano</a>
+
+                    <a class="manf_item" href="#">Xianda</a>
+                </div>
+
+                <div class="item_manf-cp ">
+
+                    <h2 class="manufacture_name">Расходные <br>
+                        материалы для
+                        оборудования</h2>
+                        <div class="inssada2">
+                        <div class="sada2">
+                    <a class="manf_item" href="#">Двигатели</a>
+
+                    <a class="manf_item" href="#">Ремни</a>
+
+                    <a class="manf_item" href="#">Помпы и насосы</a>
+
+                    <a class="manf_item" href="#">Вид деталей</a>
+
+                    <a class="manf_item" href="#">Двигатели</a>
+                    </div>
+
+            <div class="sada2">
+                    <a class="manf_item" href="#">Ремни</a>
+
+                    <a class="manf_item" href="#">Помпы и насосы</a>
+
+                    <a class="manf_item" href="#">Вид деталей</a>
+
+                    <a class="manf_item" href="#">Вид деталей</a>
+
+                    <a class="manf_item" href="#">Двигатели</a>
+                </div>  
+            </div>
+
+                </div>
+
+                </div>
+
+
+                
+
+        </div>
+
+
+        <div class="width_line1">
+
+        </div> 
+
+
+        </div>
+
+    </section>
+
+    <div class="relative_items spisok_cat-items">
+<div class="container">
+
+    
+        <div class="relative_item-list">
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+            <div class="relative-item">
+                <img src="img/detail_photo.png">
+
+                <h2 class="relative-item_title">Discovery 5 <br>
+                    Axis Plus</h2>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Кол-во интерполированных осей:</p>
+                    <p class="h_value">5 + манипулятор</p>
+                </div>
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Мощность двигателя:</p>
+                    <p class="h_value">17,6 кВт до 6000об</p>
+                </div>
+
+
+                <div class="h_block-pro bd_pro">
+                    <p class="h_name">Макс. диаметр диска мм:</p>
+                    <p class="h_value">625</p>
+                </div>
+
+                <div class="h_block-pro">
+                    <p class="h_name">Перемещение по осям X-Y-Z мм:</p>
+                    <p class="h_value">3900х2800х460</p>
+                </div>
+
+                <a class="btn_site pro_h1" href="#">
+                    Подробнее
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <section class="our_clients-block cat1">
+
+        <div class="container">
+
+            <div class="header_clients">Наши клиенты</div>
+
+            <p class="podheader_clients">лидирующие мебельные, деревообрабатывающие
+                и камнеобрабатывающие предприятия РФ и СНГ</p>
+
+            <div class="client_list">
+
+                <div class="client_list-item">
+
+                    <img class="client_list-img" src="client1.png">
+            
+
+                </div>
+
+                <div class="client_list-item">
+
+                    <img class="client_list-img" src="client1.png">
+                
+
+                </div>
+
+                <div class="client_list-item">
+
+                    <img class="client_list-img" src="client1.png">
+                
+
+                </div>
+
+                <div class="client_list-item">
+
+                    <img class="client_list-img" src="client1.png">
+                
+
+                </div>
+
+                <div class="client_list-item">
+
+                    <img class="client_list-img" src="client1.png">
+                
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="non_se question-left_form">
+
+        <div class="container">
+
+            <div class="question_form-header">Остались вопросы?</div>
+
+            <p class="question_form-upheader">Оставьте заявку на бесплатную консультацию</p>
+
+
+            <form class="site_form-1">
+           
+                <input class="inp-form icon_inp" type="text" placeholder="+7 (___) ___-__-__">
+                <button class="consult_btn">Получить консультацию</button>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+  
+    
+
+
+    <section class="map_block">
+
+        <img class="imgmap1" src="mapimg.png">
+
+        <div class="container flexfooter1">
+            <div class="header_map">
+                <img class="srsd" src="blacklogo.png">
+
+                <div class="header_map_item">
+                    <p>Телефон:</p>
+                    <a href="tel:84722402244">8 (4722) 40-22-44</a>
+                </div>
+
+
+                <div class="header_map_item">
+                    <p>Почта:</p>
+                    <a href="mail:sovet@gksovet.ru">sovet@gksovet.ru</a>
+                </div>
+
+
+                <div class="header_map_item">
+                    <p>Адрес:</p>
+                    <a href="mail:sovet@gksovet.ru">308023, Белгородская обл,  Белгород г, Промышленная ул, д.15, кв(оф.) 5</a>
+                </div>
+
+
+                <div class="header_map_item">
+                  <img src="yanimg.png">
+                </div>
+
+                <div class="header_map_item">
+                    <img src="gisimg.png">
+                  </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
