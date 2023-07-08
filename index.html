@@ -15,6 +15,16 @@
     <script>
     
     $( document ).ready(function() {
+
+$('.mobile div').on('click', () => {
+    $('.mobile div').toggleClass('active');
+    $('.mobile nav').toggleClass('open');
+    $('.mobile nav ul').toggleClass('show');
+});
+for (let a = 1; a <= $(".mobile ul li").length; a++){
+    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+}
+
         $('.client_list').slick({
   dots: true,
   infinite: false,
@@ -121,6 +131,7 @@ text-align: center;
     color: white;padding-top: 66px;
 }
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -226,7 +237,7 @@ body{font-family: "GothamProMedium";}
     color: #ffffff;
     text-align: right;
 }
-.main_site-info{padding-top: 190px; margin: 0 auto; text-align: center;
+.main_site-info{padding-top: 142px; margin: 0 auto; text-align: center;
 max-width: 900px;line-height: 56px;} 
 h1{ text-transform: uppercase;
 font-size: 50px;
@@ -571,7 +582,25 @@ text-align: center;
 
 
 @media screen and (min-width:1366px) and (max-width:1660px) {
-    .text-integr {right: 0px;}
+    .text-integr {right: 0px;max-width: 649px; padding-right: 20px; margin-top: -51px;}
+
+    .width_line1 {
+
+    margin-top: 25px;
+}
+.header_integration {
+    font-size: 32px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 10000003400;
+    position: relative;
+    margin-bottom: -100px;
+    padding-top: 60px;
+    line-height: 44px;
+    padding-bottom: 30px;
+    /* border-bottom: 1px solid #39b883; */
+}
 }
 
 
@@ -691,6 +720,201 @@ text-align: center;
 .main_site-info{padding-top: 40px;}
 h1{font-size: 24px; line-height: 28px;}
 }
+
+/*new*/
+.header_effective , .header_integration , .realised_header, .offer_header , .header_how , .header_clients{
+
+    color: #232d43;
+}
+.header-how_works {
+    border-bottom: 1px solid #c8cad0;
+    padding-bottom: 28px;
+}
+
+.text-offer {
+    padding-top: 30px;
+}
+.how_works-list{justify-content: space-between;}
+
+p{
+    line-height: 25px;
+}
+.header_map{
+    display: flex;
+    flex-direction: column;
+   
+}
+.srsd{
+   width: 143px!important; align-self: flex-end;
+}
+.map_yan{margin-bottom: 0px;}
+
+.pricesol {
+    color: #39b883;
+    align-self: center;
+}
+.question-left_form {
+    background-color: #232d43;
+
+}
+
+@media screen and (max-width: 1196px){
+.container {
+    padding: 23px;
+}
+
+.text-integr {
+    position: unset;
+    max-width: 100%;
+    padding: 23px;
+}
+
+}
+
+@media screen and (max-width: 1226px){
+
+.imgmap1{  display: none;  }
+
+.map_block{  background-image: url("mapimg.png")  };
+
+
+
+}
+
+
+.mobile div {
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 25px;
+  /*  background-color: #337AB7;*/
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 9999999;
+    border: 4px solid #BFE2FF;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.mobile div span {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 13px;
+    transition-duration: .4s;
+
+}
+.mobile div span:nth-child(1) {
+    top: 14px;
+}
+.mobile div span:nth-child(2) {
+    top: 23px;
+}
+.mobile div span:nth-child(3) {
+    bottom: 14px;
+}
+.mobile div.active span:nth-child(1) {
+    transform: translate(-15px, 9px) rotate(-45deg);
+}
+.mobile div.active span:nth-child(2) {
+    transition-duration: 0s;
+    opacity: 0;
+}
+.mobile div.active span:nth-child(3) {
+    transform: translate(-15px, -9px) rotate(45deg);
+}
+.mobile nav {
+    display: block;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 9999990;
+    transition-duration: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mobile nav.open {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 0;
+}
+.mobile nav ul {
+    display: none;
+}
+.mobile nav ul.show {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mobile ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.mobile ul li:not(:last-child) {
+    margin-bottom: 22px;
+}
+.mobile ul li a {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+         
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (min-width:1076px){
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:1076px){
+
+    .main_site-info h3 {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+    .nav_menu{display: none;}
+}
+.mob_logo{
+    position: absolute;
+    top: 26px;
+}
     </style>
 </head>
 <body>
@@ -698,12 +922,36 @@ h1{font-size: 24px; line-height: 28px;}
 
     <header class="header">
         <div class="container">
+
+
+            <div class="mobile">
+
+
+                <a class="mob_logo" href="#">
+                    <img src="logo.png">
+                </a>
+
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Оборудование</a></li>
+                    <li><a href="#">Консалтинг</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Расходные материалы</a></li>
+                    </ul>
+                </nav>
+            </div>
+
             <div class="nav_menu">
                 <a href="#">
                     <img src="logo.png">
                 </a>
                 <ul class="menu_block">                        
-                    <li><a href="detailitem.html">Оборудование</a></li>
+                    <li><a href="#">Оборудование</a></li>
                     <li>Консалтинг</li>
                     <li>Кейсы</li>
                     <li>Расходные материалы</li>
@@ -768,10 +1016,10 @@ h1{font-size: 24px; line-height: 28px;}
 
     <section class="integration_text-info">
         <div class="container1">
-        <h2 class="header_integration">Интегрируем новейшие технологии,  подбираем оптимальные решения, оптимизируя расходы</h2>
-        <div class="width_line1">
+        <h2 class="header_integration">Интегрируем новейшие технологии,  подбираем оптимальные решения, оптимизируя расходы<div class="width_line1">
 
-        </div> 
+        </div> </h2>
+        
         <div class="inegrity-items">
             <div class="integrity_img">
              <img src="dir1.png">
@@ -903,7 +1151,7 @@ h1{font-size: 24px; line-height: 28px;}
 
                     <div class="how_works-list">
 
-                        <div style="width: 30%" class="how_works_list-item">
+                        <div style="width: 32%" class="how_works_list-item">
 <div class="header-how_works">
     01/
 </div>
@@ -915,7 +1163,7 @@ h1{font-size: 24px; line-height: 28px;}
 </div>
 </div>
 
-<div style="width: 30%" class="how_works_list-item">
+<div style="width: 32%" class="how_works_list-item">
     <div class="header-how_works">
         02/
     </div>
@@ -928,7 +1176,7 @@ h1{font-size: 24px; line-height: 28px;}
     
                         </div>
 
-                        <div style="width: 30%" class="how_works_list-item">
+                        <div style="width: 32%" class="how_works_list-item">
                             <div class="header-how_works">
                                 03/
                             </div>
@@ -941,7 +1189,7 @@ h1{font-size: 24px; line-height: 28px;}
                             
                                                 </div>
 
-                                                <div style="width: 45%" class="how_works_list-item">
+                                                <div style="width: 49%" class="how_works_list-item">
                                                     <div class="header-how_works">
                                                         04/
                                                     </div>
@@ -955,7 +1203,7 @@ h1{font-size: 24px; line-height: 28px;}
                                                                         </div>
 
 
-    <div style="width: 45%" class="how_works_list-item">
+    <div style="width: 49%" class="how_works_list-item">
                                                                             <div class="header-how_works">
                                                                                 05/
                                                                             </div>
@@ -1075,7 +1323,7 @@ h1{font-size: 24px; line-height: 28px;}
                 </div>
 
 
-                <div class="header_map_item">
+                <div class="header_map_item map_yan">
                   <img src="yanimg.png">
                 </div>
 
