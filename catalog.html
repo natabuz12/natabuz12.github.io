@@ -707,6 +707,7 @@ h1{font-size: 24px; line-height: 28px;}
 }
 
 .heade-page{
+    z-index: 2000;
     background: none;
     background-color: #232d43;
     padding-bottom: 50px;
@@ -752,7 +753,9 @@ h1{font-size: 24px; line-height: 28px;}
 .item_info-block{
     width: 70%;
 }
-
+.h_value{
+    font-weight: 600;
+}
 .item_container{display: flex; justify-content: space-between;}
 
 .manufacture_name{
@@ -966,7 +969,7 @@ table.iksweb td:nth-child(2){
     max-width: 360px;
     text-transform: none;
 }
-
+.catalog_product .item_container {margin-top:0px}
 .catalog_product .width_line1{width: 100%}
 
 .catalog_product_item{
@@ -980,13 +983,18 @@ table.iksweb td:nth-child(2){
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: unset;
+    padding: 0px;
+    padding-top: 37px;
+    padding-bottom: 13px;
+    padding-right: 25px;
 }
 
 .catalog_product  .item_manf-cp + .item_manf-cp {
     margin-top: 0px;
 }
 
-
+.catalog_product .width_line1{margin-left: 0px;}
 .catalog_product .line_get {
     border-bottom: none;
 }
@@ -1290,11 +1298,225 @@ background-color: #232d43;
         right: 18px;
     }
 }
-body .pro_h1:after {
+.map_frame-yandex {position: absolute; height: 100%;}
 
-    top: 50%;
-    transform: translate(0, -50%);
+.header_map{z-index: 1000; margin-bottom: 80px;}
+
+body .catalog_product  .sdf2312{
+    margin-top: 0px;
 }
+.catalog_product{
+    padding-bottom: 40px;
+}
+
+/**/
+
+.offer_header{
+    font-family: "GothamProMedium";
+    font-size: 41px;
+}
+.offer_block-list{
+    max-width: 1140px;
+}
+
+.plus{font-size: 45px;}
+
+
+.header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header{
+    font-size: 41px;
+    line-height: 51px;
+    font-family: "GothamProMedium";
+}
+.realised_header{max-width: 797px;}
+.header_how{max-width: 355px;}
+.podheader_clients{font-size: 23px; max-width: 630px; text-align: center;}
+.text-offer{
+font-size: 21px;
+line-height: 31px;
+}.how_works_list-item{height: 280px;}
+.header_how {
+    padding-bottom: 31px;
+}
+.how_works-list{padding-top: 51px;}
+
+.question_form-upheader{
+font-size: 18px;
+line-height: 26px;
+}
+.sol_item p {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.sol_item h3, .sol_item h4{
+    font-family: "GothamProMedium";
+    
+}
+.sol_item h3{font-size: 28px;max-width: 515px;}
+
+.sol1 {
+    width: 63%;
+}
+.sol2{
+    width:30%
+}
+.header_after-podobor{
+    max-width: 531px;
+}
+.podbor_list{
+    padding-top: 57px;
+}
+.item_list p{font-size: 21px; line-height: 31px;}
+
+.podbor_list p {
+    width: 300px;
+}
+.feature-item p{font-size: 18px;}
+
+.feature-item p {
+    width: 227px;
+}
+.itemsolinside {
+    line-height: 30px;
+    width: 215px;
+    font-size: 20px;
+}
+.podbor_takealook{
+    font-size: 19px;
+
+}
+.podbor_takealook:after{
+    right: 21px;
+    top: -9px;
+}
+
+@media screen and (max-width: 768px){
+
+    .offer_header-item{font-size: 20px;}
+    .header-how_works{font-size: 28px;}
+    .offer_item p{font-size: 16px; text-align: center;}
+    .text-offer {font-size: 16px;}
+
+    .offer_header-item{text-align: center;}
+
+    .header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .header_after-podobor, .header_after-offer,.podheader_clients, .question_form-upheader{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .podbor_list p{font-size: 16px}
+
+    .podbor_takealook{font-size: 16px;}
+
+    .podbor_takealook:after {
+    right: 45px;
+    top: -10px;
+}
+
+.sol_item h3{font-size: 20px;}
+
+.sol1 {
+    width: 100%;
+}
+
+.sol2 {
+    width: 100%;
+}
+
+.itemsolinside {
+    margin: 0 auto;
+    text-align: center;
+}
+.lookcase_btn{
+    align-self: center;
+}
+
+}
+
+.integrity_img{
+
+}
+.text-integr {
+    position: unset;
+}
+.text-integr {
+    padding-top: 20px;
+    margin: 0px;
+    z-index: 2;
+}
+.inegrity-items{display: flex;gap:30px}
+
+.text-integr>p {
+    margin-bottom: 40px;
+    text-align: justify;font-size: 17px; line-height: 28px;
+}
+.site_design-circles{
+    position: absolute;
+}
+.circle1{
+    width: 900px;
+    height: 900px;
+    left: -152px;
+    top: -147px;
+    border-radius: 100%;
+    position: absolute;
+    border: 3px solid #e9ebef;
+}
+
+.circle2{
+    width: 700px;
+    height: 700px;
+    left: -152px;
+    top: -147px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 50%;
+    transform: translate(0, -50%);
+    border: 3px solid #e9ebef;
+}
+.circle3{
+    width: 500px;
+    height: 500px;
+    left: -152px;
+    top: -147px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 50%;
+    transform: translate(0, -50%);
+    border: 3px solid #e9ebef;
+}
+
+.header_integration .width_line1 {
+    margin-top: 25px;
+}
+.site_design-circles {
+    position: absolute;
+    z-index: 1;
+}
+.integrity_img{
+    z-index: 2;
+}
+
+.text-integr {
+    right: 0px;
+    max-width: 80%;
+    padding-right: 88px;}
+.header_integration{z-index: 2; position: relative;}
+
+.podbor_text-info{position: relative; z-index: 2;}
+
+@media screen and (max-width: 768px){
+
+    .site_design-circles{display: none;}
+
+    .text-integr{padding: 10px; max-width: 100%;}
+}
+
     </style>
 </head>
 <body>
@@ -1440,7 +1662,7 @@ body .pro_h1:after {
         </div>
 
 
-        <div class="width_line1">
+        <div class="width_line1 sdf2312">
 
         </div> 
 
@@ -1838,7 +2060,7 @@ body .pro_h1:after {
 
     <section class="map_block">
 
-        <img class="imgmap1" src="mapimg.png">
+        <iframe class="map_frame-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afde356afc35c42d66ef35bfb79047ce22a54d999a94f5bb9b0c6a8548f657f03&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 
         <div class="container flexfooter1">
             <div class="header_map">
