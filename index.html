@@ -16,6 +16,22 @@
     
     $( document ).ready(function() {
 
+        var header_stick = $(".sticky_header");
+        var header = $(".header");
+var scrollChange = 1;
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= scrollChange) {
+        header_stick.addClass('scrolled');
+        header.addClass('delpad');
+    } else {
+        header_stick.removeClass('scrolled');
+        header.removeClass("delpad");
+    }
+}); 
+
+
 $('.mobile div').on('click', () => {
     $('.mobile div').toggleClass('active');
     $('.mobile nav').toggleClass('open');
@@ -70,7 +86,7 @@ for (let a = 1; a <= $(".mobile ul li").length; a++){
     </script>
 
     <style>
-
+.header.scrolled 
 .slick-slide img {
     display: block;
     margin: 0 auto;
@@ -178,7 +194,7 @@ table {
 	border-spacing: 0;
 }
 *{
-
+   color: #232d43;
     box-sizing: border-box;
 }
 
@@ -201,7 +217,7 @@ table {
 }
 
 body{font-family: "GothamProMedium";}
-.effective_plan-info {margin-top: 60px;}
+.effective_plan-info {margin-top: 0;}
 .header{
     padding-top: 50px;
     color: #ffffff;
@@ -218,7 +234,7 @@ body{font-family: "GothamProMedium";}
 
 .nav_menu {display: flex; justify-content: space-between;align-items: center;}
 .menu_block{display:flex;}
-.menu_block li{margin-left: 36px;}
+.menu_block li{margin-left: 36px; color: #ffffff;}
 .menu_block a{
     text-decoration: none;
     color: #ffffff;
@@ -240,21 +256,23 @@ body{font-family: "GothamProMedium";}
 .main_site-info{padding-top: 142px; margin: 0 auto; text-align: center;
 max-width: 900px;line-height: 56px;} 
 h1{ text-transform: uppercase;
-font-size: 50px;
+font-size: 50px; color: #ffffff;
 }
 .after_header-title{
-    
+    color: #ffffff;
     font-size: 24px;line-height:30px;
     padding-top: 20px;max-width: 520px;
     margin: 0 auto;
 }
 .main_site-info h3{
     font-size: 17px;
+    color:#ffffff;
 }
 .site_main-form{padding-top: 80px; margin: 0 auto; text-align: center;}
 .inp-form{width: 260px; height: 72px; margin-right: 10px; border-radius: 40px; color: #ffffff; border-color: white; padding: 20px;background-color: transparent;}
 .site_form-1{margin-top: 25px;}
 .site_main-form h2{
+    color: #ffffff;
 max-width: 340px;
 margin: 0 auto;
 }
@@ -319,7 +337,7 @@ section{
 }
 .integration_text-info{
     margin-bottom: -2px;
-    margin-top: 60px;
+    margin-top: 80px;
 background-color: #f4f6fa;
 }
 .inegrity-items{
@@ -360,10 +378,10 @@ background-color: #f4f6fa;
     display: flex;
     justify-content: space-between;
 }
-.header_podbor{font-size: 40px; color: #ffffff;padding-top: 60px; margin: 0 auto; text-align: center; text-transform: uppercase;
-max-width: 750px;
+.header_podbor{font-size: 40px; color: #ffffff;padding-top: 90px; margin: 0 auto; text-align: center; text-transform: uppercase;
+max-width: 750px; 
 }
-.podbor_text-info{ background-color: #232d43; padding-bottom: 70px;}
+.podbor_text-info{ background-color: #232d43; padding-bottom: 90px;}
 .podbor_list p{width: 225px;}
 .btn_site {
     position: relative;
@@ -390,7 +408,7 @@ max-width: 750px;
     font-size: 29px;
     margin-bottom: 40px;
 }
-.header_after-offer{color: black;}
+.header_after-offer{color: black; }
 .item_list p{
     color: #ffffff;
     padding-top: 15px;
@@ -408,14 +426,15 @@ max-width: 750px;
 .podbor_takealook:after{
     content: "";
     position: absolute;
-    background-image: url(rightsv1.svg);
+    background-image: url(rrw1.png);
     background-size: cover;
-    width: 35px;
-    height: 36px;
+    width: 24px;
+    height: 12px;
     fill: orange;
     color: whitesmoke;
-    right: 47px;
-    top: -10px;
+    right: 28px;
+    top:50%;
+    transform: translate(0, -50%);
 }
 
 .realised_header, .offer_header{padding-bottom: 30px; padding-top: 50px; max-width: 630px;
@@ -425,7 +444,7 @@ line-height:36px;
  text-align: center;
 }
 .realised_solution{
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
 .solution_list{margin-top: 60px;}
 .sol_item h3, .sol_item h4{
@@ -477,16 +496,17 @@ line-height:36px;
     position: absolute;
     background-image: url(reload.png);
     background-size: cover;
-    width: 26px;
-    height: 27px;
+    width: 22px;
+    height: 23px;
     fill: orange;
     color: whitesmoke;
     right: 29px;
-    top: 23px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 .offer_block{
     background-color: #f3f6f9;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 .slick-dots{
     bottom: -90px;
@@ -494,6 +514,7 @@ line-height:36px;
 .podheader_clients{
     max-width: 436px;
     padding-bottom: 129px;
+    line-height: 1.6em;
     margin: 0 auto;
 }
 .header_after-offer{
@@ -520,7 +541,7 @@ line-height:36px;
     font-weight: 300;
     color: #39b883
 }
-.offer_item p{    max-width: 199px;}
+.offer_item p{    max-width: 199px; line-height: 1.6em}
 .header_how
 {
     padding-bottom: 80px;
@@ -579,9 +600,9 @@ text-align: center;
 
 }
 .header_map_item a{
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: #232d43;line-height: 1.4em;
     margin-top: 8px;
     display: block;
 }
@@ -638,7 +659,7 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 10px;
+    gap: 44px;
     align-items: center;
 }
 
@@ -679,7 +700,7 @@ text-align: center;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 17px;
+    gap: 44px;
 }
 
 .sol2 {
@@ -922,7 +943,7 @@ p{
     top: 26px;
 }
 
-.map_frame-yandex {position: absolute; height: 100%;}
+.map_frame-yandex {position: absolute; height: 100%; filter: grayscale(1);}
 
 .header_map{z-index: 1000; margin-bottom: 80px;}
 
@@ -931,7 +952,7 @@ font-family: "GothamProMedium";
 }
 .offer_item p{
     font-family: "GothamPro";
-    font-size: 21px;
+    font-size: 19px;
     max-width: 253px;
 }
 .offer_item{
@@ -957,8 +978,11 @@ font-family: "GothamProMedium";
 .header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header{
     font-size: 41px;
     line-height: 51px;
+    padding-top: 90px;
     font-family: "GothamProMedium";
 }
+.question_form-header {padding-top: 70px;}
+
 .realised_header{max-width: 797px;}
 .header_how{max-width: 355px;}
 .podheader_clients{font-size: 23px; max-width: 630px; text-align: center;}
@@ -985,7 +1009,7 @@ line-height: 26px;
     font-family: "GothamProMedium";
     
 }
-.sol_item h3{font-size: 28px;max-width: 515px;}
+.sol_item h3{font-size: 28px;max-width: 515px; line-height:1.4em;}
 
 .sol1 {
     width: 63%;
@@ -1019,12 +1043,19 @@ line-height: 26px;
 
 }
 .podbor_takealook:after{
-    right: 21px;
-    top: -9px;
+
 }
 
 @media screen and (max-width: 768px){
-
+    .podheader_clients{padding-bottom: 70px;}
+    .question-left_form{margin-top: 80px; padding-bottom: 40px;}
+    .question_form-header{margin-top: 0px;}
+    .slick-slide img {margin: 0 auto;}
+    .offer_block{padding-bottom: 40px;}
+    .realised_solution{padding-bottom: 40px;}
+    .podbor_text-info {padding-bottom: 40px;}
+    .btn_site{margin-top: 25px; margin-bottom: 40px;}
+    .integration_text-info {margin-top: 40px;}
     .offer_header-item{font-size: 20px;}
     .header-how_works{font-size: 28px;}
     .offer_item p{font-size: 16px; text-align: center;}
@@ -1035,6 +1066,7 @@ line-height: 26px;
     .header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header {
         font-size: 24px;
         line-height: 26px;
+        padding-top: 30px;
     }
 
     .header_after-podobor, .header_after-offer,.podheader_clients, .question_form-upheader{
@@ -1047,7 +1079,7 @@ line-height: 26px;
 
     .podbor_takealook:after {
     right: 45px;
-    top: -10px;
+    top: 50%;
 }
 
 .sol_item h3{font-size: 20px;}
@@ -1149,14 +1181,33 @@ line-height: 26px;
     .text-integr{padding: 10px; max-width: 100%;}
 }
 
+.sticky_header.scrolled{
+    background-color: #232d43;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 25px;
+    z-index: 10000;
+    padding-bottom: 25px;
+}
+.delpad{
+    padding-top: 0px;
+}
+
+.lookcase_btn, .consult_btn, .btn_site{
+    transition: 0.3s;
+}
+.lookcase_btn:hover, .consult_btn:hover, .btn_site:hover{
+    background: #16935f;
+}
     </style>
 </head>
 <body>
 
 
     <header class="header">
+        <div class="sticky_header">
         <div class="container">
-
 
             <div class="mobile">
 
@@ -1199,7 +1250,9 @@ line-height: 26px;
                     </a>
                 </div>
             </div>
+</div></div>
 
+<div class="container">
             <div class="main_site-info">
                 <h1>Подберем и поставим  необходимое оборудование </h1>
                 <p class="after_header-title"> для мебельных, деревообрабатывающих  и камнеобрабатывающих предприятий</p>
