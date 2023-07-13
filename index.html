@@ -16,18 +16,18 @@
     
     $( document ).ready(function() {
 
-        var header_stick = $(".sticky_header");
-        var header = $(".header");
+        var header_stick = $(".header_inside");
+        var header = $(".header_inside");
 var scrollChange = 1;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= scrollChange) {
-        header_stick.addClass('scrolled');
-        header.addClass('delpad');
+        header_stick.addClass('header_inside-addition');
+
     } else {
-        header_stick.removeClass('scrolled');
-        header.removeClass("delpad");
+        header_stick.removeClass('header_inside-addition');
+
     }
 }); 
 
@@ -135,6 +135,10 @@ for (let a = 1; a <= $(".mobile ul li").length; a++){
     background-color: #183c6b;
     margin-top: 140px;
     padding-bottom: 80px;
+}
+body .header_inside-addition{
+    background: unset;
+    background-color: #232d43!important;
 }
 .question-left_form .site_form-1{
 text-align: center;
@@ -1181,7 +1185,7 @@ line-height: 26px;
     .text-integr{padding: 10px; max-width: 100%;}
 }
 
-.sticky_header.scrolled{
+/*.sticky_header.scrolled{
     background-color: #232d43;
     position: fixed;
     max-width: 100%;
@@ -1189,10 +1193,10 @@ line-height: 26px;
     padding-top: 25px;
     z-index: 10000;
     padding-bottom: 25px;
-}
-.delpad{
+}*/
+/*.delpad{
     padding-top: 0px;
-}
+}*/
 
 .lookcase_btn, .consult_btn, .btn_site{
     transition: 0.3s;
@@ -1200,12 +1204,35 @@ line-height: 26px;
 .lookcase_btn:hover, .consult_btn:hover, .btn_site:hover{
     background: #16935f;
 }
+.header_top{
+    padding-top: 50px;
+    color: #ffffff;
+    background: url(backgorund_main.png) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    background-position-y: -51px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.header_inside{
+    position: sticky;
+    top: 0;
+    background: url(backgorund_main.png) no-repeat center top fixed;
+    width: 100%;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;   z-index:1000;
+}
+
     </style>
 </head>
 <body>
 
-
-    <header class="header">
+    <header class="header_inside">
         <div class="sticky_header">
         <div class="container">
 
@@ -1251,6 +1278,11 @@ line-height: 26px;
                 </div>
             </div>
 </div></div>
+</header>
+
+<section class="header_top">
+
+  
 
 <div class="container">
             <div class="main_site-info">
@@ -1272,7 +1304,7 @@ line-height: 26px;
             </div>
 
         </div>
-    </header>
+    </section>
 
     <section class="effective_plan-info">
         <div class="container">
