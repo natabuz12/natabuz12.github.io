@@ -2,58 +2,905 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    $( document ).ready(function() {
-
-        var header_stick = $(".header_inside");
-        var header = $(".header_inside");
-var scrollChange = 1;
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= scrollChange) {
-        header_stick.addClass('header_inside-addition');
-
-    } else {
-        header_stick.removeClass('header_inside-addition');
-
-    }
-}); 
+    <link href="css/style.css" rel="stylesheet">
 
 
-$('.mobile div').on('click', () => {
-    $('.mobile div').toggleClass('active');
-    $('.mobile nav').toggleClass('open');
-    $('.mobile nav ul').toggleClass('show');
-});
-for (let a = 1; a <= $(".mobile ul li").length; a++){
-    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
-}
+</head>
+<body>
 
-        $('.client_list').slick({
+
+    
+    <header>
+        <img src="img/1.png">
+        <div class="container">
+
+
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <div class="menu">
+                <nav>
+                   <ul>
+                    <li><img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a></li>
+                    <li><a href="#">Похудение</a></li>
+                    <li><a href="#">Иммунитет</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Опт</a></li>
+                    <li><a href="#">Где купить</a></li>
+                    <li><a href="#">Контакты</a></li>
+                   </ul>
+                </nav>
+            </div>
+            
+           <div class="header_top-1">Доставка по всей России</div>
+
+           <div class="header_top-2">
+
+                <div class="header_top2-phone_block">
+                    <a href="tel:74959409669">+7 (495) 940-96-69</a>
+                    <span>Позвонить нам</span>
+                </div>
+
+
+                <div class="header_top2-markets_list">
+                    <div class="market_item"><img src="img/ozon.png"> <span>Мы в Ozon</span></div>
+                    <div class="market_item"><img src="img/wb.png"> <span>Мы в Wildberries</span></div>
+                    <div class="market_item"><img src="img/ym.png"> <span>Мы в ЯМ</span></div>
+                </div>
+
+
+                <div class="header_top2-user_navigation">
+                    <div class="item_user-nav searchnav"><div class="item_op2"><img src="img/loop.png"></div><span>Поиск</span></div>
+                    <div class="item_user-nav personal"><div class="item_op2"><img src="img/user.png"></div><span>Войти</span></div>
+                    <div class="item_user-nav basketlogo"><div class="item_op2"><img src="img/basket.png"></div><span>Корзина</span> <span class="element-basket_count">12</span></div>
+                </div>
+
+           </div>
+
+           <div class="border-site_element"></div>
+
+           <div class="header_top-3">
+             <div class="header_top-3_logo"><img src="img/logo.png"></div>
+
+             <ul class="menu_nav-catalog">
+                <li><img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a></li>
+                <li><a href="#">Похудение</a></li>
+                <li><a href="#">Иммунитет</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Опт</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Контакты</a></li>
+             </ul>
+
+           </div>
+
+       
+
+        </div>
+    </header>
+
+
+    <section class="banner_top-main">
+
+        <div class="container">
+
+            <div class="banner_main-list">
+
+                <div class="banner_main-item">
+
+                    <h2 class="bm_header">Берём от природы и
+                        делаем для тебя</h2>
+
+                    <img src="img/banner1.png" alt="">
+
+                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+
+                </div>
+
+
+                <div class="banner_main-item">
+
+                    <h2 class="bm_header">Берём от природы и
+                        делаем для тебя 2</h2>
+
+                    <img src="img/banner1.png" alt="">
+
+                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+
+                </div>
+
+                <div class="banner_main-item">
+
+                    <h2 class="bm_header">Берём от природы и
+                        делаем для тебя 3</h2>
+
+                    <img src="img/banner1.png" alt="">
+
+                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="bestsellers_block ">
+        <div class="container">
+            <h2 class="header_sec">Бестселлеры</h2>
+            <div class="bs_list">
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item">
+                            HIT
+                        </div>
+                        <img src="img/chlorella1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item">
+                            HIT
+                        </div>
+                        <img src="img/psy_K210_tr 1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item">
+                            HIT
+                        </div>
+                        <img class="item-img" src="img/omega_90 1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item">
+                            HIT
+                        </div>
+                        <img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item">
+                            HIT
+                        </div>
+                        <img src="img/chlorella1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+            </div>
+
+
+            <a class="bs_list-link" href="#">Перейти в каталог</a>
+
+        </div>
+    </section>
+
+    <section class="bestsellers_block bs-new">
+        <div class="container">
+            <h2 class="header_sec">Новинки</h2>
+            <div class="bs_list">
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item hi-new">
+                            NEW
+                        </div>
+                        <img src="img/chlorella1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item hi-new">
+                            NEW
+                        </div>
+                        <img src="img/psy_K210_tr 1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item hi-new">
+                            NEW
+                        </div>
+                        <img class="item-img" src="img/omega_90 1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item hi-new">
+                            NEW
+                        </div>
+                        <img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+
+                <div class="bs_item">
+
+                    <div class="bs-insideitm">
+
+                        <div class="hit_item hi-new">
+                            NEW
+                        </div>
+                        <img src="img/chlorella1.png">
+                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <span class="bs_price">1 417 руб.</span>
+                        <div class="bs_buttons">
+                            <a href="#" class="bs_btn-detail">Подробнее</a>
+                            <a href="#" class="bs_btn-cart"><img src="img/btn2.png"></a>
+                        </div>
+                        <div class="rating-result">
+                            <span class="active"></span>	
+                            <span class="active"></span>    
+                            <span class="active"></span>  
+                            <span class="active"></span>  
+                            <span></span>
+                            <div class="count-valrate">125</div>
+                        </div>
+
+                  </div>
+                </div>
+            </div>
+
+
+            <a class="bs_list-link" href="#">Перейти в каталог</a>
+
+        </div>
+    </section>
+
+    <section class="site_elements">
+        <div class="container">
+            <div class="site_elements-list">
+
+                <div class="site_element-left_item koo3">
+                    <img src="img/Screenshot_1 1.png" alt="">
+
+                    <div class="se_block1">
+                        <h2 class="se_header">Вкусные рецепты</h2>
+                        <span>от VeganNova</span>
+                        <a href="#"><img src="img/left-news.png" alt=""></a>
+                    </div>
+
+                </div>
+
+                <div class="site_element-right_item mjjkjk23k1">
+
+                    <div class="site_element-left_item koo3 koioio3">
+                        <img src="img/bac1.png" alt="">
+    
+                        <div class="se_block1">
+                            <h2 class="se_header">7 полезных</h2>
+                            <span>привычек для <br>
+                                стройности</span>
+                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                        </div>
+    
+                    </div>
+
+                    <div class="site_element-left_item koo3 koioio3">
+                        <img src="img/bac2.png" alt="">
+    
+                        <div class="se_block1">
+                            <h2 class="se_header">Добавки</h2>
+                            <span>для иммунитета и красоты</span>
+                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                        </div>
+    
+                    </div>
+
+                    
+                    <div class="site_element-left_item koo3 koioio3">
+                        <img src="img/bac3.png" alt="">
+    
+                        <div class="se_block1">
+                            <h2 class="se_header">Суперфуды</h2>
+                            
+                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                        </div>
+    
+                    </div>
+
+                    
+                    <div class="site_element-left_item koo3 koioio3">
+                        <img src="img/bac4.png" alt="">
+    
+                        <div class="se_block1">
+                            <h2 class="se_header">Спорт и диета</h2>
+                     
+                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews_block bs-new">
+        <div class="container">
+            <div class="reviews_slider">
+                <h2 class="header_sec">Отзывы покупателей</h2>
+
+                <div class="list-reviews-img">
+
+                    <div class="review_item"> 
+
+                        <img src="img/ozonf.png">
+
+                        <div class="rate-block_review">
+
+                            <div class="count-valrate">5.0</div>
+
+                            <div class="rating-result">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                        </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="review_item"> 
+
+                        <img src="img/wbf.png">
+
+                        <div class="rate-block_review">
+
+                            <div class="count-valrate">5.0</div>
+
+                            <div class="rating-result">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                        </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="review_item"> 
+
+                        <img src="img/ymf.png">
+
+                        <div class="rate-block_review">
+
+                            <div class="count-valrate">5.0</div>
+
+                            <div class="rating-result">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                                <span class="active"></span>  
+                        </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="list-reviews-rev">
+
+                    <div class="reviewposti">
+                        <div class="review_inside">
+                            <div class="personal-block">
+                                <div class="pers_icon">E</div>
+                                <div class="pers-info">
+                                    <p class="pers-name-inf">Елена</p>
+                                    <div class="rating-result">
+                                        <span class="active"></span>	
+                                        <span class="active"></span>    
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                </div>
+                                </div>
+                            </div>
+                            <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
+                            <a class="reviewlink" href="#">Читать полностью</a>
+                            <img class="reviewimg" src="img/Vector (9).png">
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="reviewposti">
+                        <div class="review_inside">
+                            <div class="personal-block">
+                                <div class="pers_icon">E</div>
+                                <div class="pers-info">
+                                    <p class="pers-name-inf">Елена</p>
+                                    <div class="rating-result">
+                                        <span class="active"></span>	
+                                        <span class="active"></span>    
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                </div>
+                                </div>
+                            </div>
+                            <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
+                            <a class="reviewlink" href="#">Читать полностью</a>
+                            <img class="reviewimg" src="img/Vector (9).png">
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="reviewposti">
+                        <div class="review_inside">
+                            <div class="personal-block">
+                                <div class="pers_icon">E</div>
+                                <div class="pers-info">
+                                    <p class="pers-name-inf">Елена</p>
+                                    <div class="rating-result">
+                                        <span class="active"></span>	
+                                        <span class="active"></span>    
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                </div>
+                                </div>
+                            </div>
+                            <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
+                            <a class="reviewlink" href="#">Читать полностью</a>
+                            <img class="reviewimg" src="img/Vector (9).png">
+                        </div>
+                    </div>
+
+                    
+                    <div class="reviewposti">
+                        <div class="review_inside">
+                            <div class="personal-block">
+                                <div class="pers_icon">E</div>
+                                <div class="pers-info">
+                                    <p class="pers-name-inf">Елена</p>
+                                    <div class="rating-result">
+                                        <span class="active"></span>	
+                                        <span class="active"></span>    
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                        <span class="active"></span>  
+                                </div>
+                                </div>
+                            </div>
+                            <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
+                            <a class="reviewlink" href="#">Читать полностью</a>
+                            <img class="reviewimg" src="img/Vector (9).png">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="veganova_club-block">
+        <div class="container">
+            <div class="veganova-bl">
+                <h2 class="header_sec">Клуб VeganNova</h2>
+
+                <div class="veganova_img-sertf">
+                    <img src="img/значки 1.png">
+                    <img src="img/значки 2.png">
+                    <img src="img/значки 3.png">
+                    <img src="img/значки 4.png">
+                </div>
+
+                <div class="vgbl">
+
+   
+
+                    <div class="veganova_block-info">
+                        <img src="img/image 3.png">
+                        <div class="vaega_left-block">
+
+                            <div class="vega_menu-items">
+                                
+                                <div class="vega_menu-item">
+
+                                    <span class="vega_icon-flower">01</span>
+
+                                    <span class="vert_line-flower"></span>
+
+                                    <div class="vega_text-item">Веганнова — это настоящая большая семья, обожающая природу.</div>
+
+                                </div>
+
+                                <div class="vega_menu-item">
+
+                                    <span class="vega_icon-flower">02</span>
+
+                                    <span class="vert_line-flower"></span>
+
+                                    <div class="vega_text-item">Мы изготавливаем и продаём органические продукты, которые помогут стать не только здоровыми, бодрыми, полными энергии, но ещё и очень красивыми.</div>
+
+                                </div>
+
+                                <div class="vega_menu-item">
+
+                                    <span class="vega_icon-flower">03</span>
+
+                                    <span class="vert_line-flower"></span>
+
+                                    <div class="vega_text-item">Мы никогда не продаём то, что не попробовали сами и не убедились в том, что это работает.</div>
+
+                                </div>
+
+                                <div class="vega_menu-item">
+
+                                    <span class="vega_icon-flower">04</span>
+
+                                    <span class="vert_line-flower"></span>
+
+                                    <div class="vega_text-item">Мы никогда не продаём то, что не попробовали сами и не убедились в том, что это работает.</div>
+
+                                   
+
+                                </div>
+
+                                <a href="#" class="vega_link1">Читать полностью</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contactform-site bs-new">
+        <div class="container">
+
+            <div class="contact-background_s">
+
+                <div class="form-site">
+
+                    <h3 class="form_site-header">СТАТЬ НАШИМ ПАРТНЕРОМ</h3>
+
+                    <p class="form_site_upheader">заполняйте заявку и становитесь нашим партнером</p>
+
+                    <div class="form_site-marketing"><span>скидка 10% на первый оптовый заказ</span></div>
+
+                    <form>
+
+                        <div class="name-stan"><input type="text" class="stan_ipn" placeholder="Ваше имя"></div>
+
+                        <div class="tel-stan"><input type="text" class="stan_ipn tel-stan" placeholder="Тел.(обязательно): +(код) ..."></div>
+ 
+                        <div class="mail-stan"><input type="text" class="stan_ipn mail-stan" placeholder="Ваш E-mail"></div>
+
+                        <button class="btn-contact1" type="submit">Отправить заявку</button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+
+            <div class="contacts_block">
+                <h2 class="header-footer">КОНТАКТЫ</h2>
+                <ul>
+                    <li class="address">
+                        <a href="#">Россия, г. Москва</a>
+                    </li>
+                    <li class="phone_site">
+                        <a href="tel+74959409669">+7 (495) 940-96-69</a>
+                    </li>
+                    <li class="mail_site">
+                        <a href="mail:info@vegannova.com">info@vegannova.com</a>
+                    </li>
+                </ul>
+            </div>
+
+           <div class="main_items-menu-footer_block">
+            <h2 class="header-footer">ГЛАВНОЕ</h2>
+                <ul>
+                    <li class="mi-footer">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li  class="mi-footer">
+                        <a href="#">Продукты</a>
+                    </li>
+                    <li  class="mi-footer">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li  class="mi-footer">
+                        <a href="#">Рецепты</a>
+                    </li>
+                    <li  class="mi-footer">
+                        <a href="#">Опт</a>
+                    </li>
+                </ul>
+           </div>
+
+           <div class="lets_friend-block">
+                <h2 class="header-footer">ДАВАЙТЕ ДРУЖИТЬ!</h2>
+                <div class="letsf_list">
+                    <a href="#"><img src="img/o_social.png"></a>
+                    <a href="#"><img src="img/pin_social.png"></a>
+                    <a href="#"><img src="img/facebook_social.png"></a>
+                    <a href="#"><img class="vk_le1" src="img/vk_social.png"></a>
+                    <a href="#"><img src="img/telegram_social.png"></a>
+                </div>
+           </div>
+
+           <div class="wherebuy-block">
+            <h2 class="header-footer">ГДЕ КУПИТЬ?</h2>
+            <div class="whf_list">
+                <a href="#"><img src="img/ozonf.png"></a>
+                <a href="#"><img src="img/wbf.png"></a>
+                <a href="#"><img src="img/ymf.png"></a>
+            </div>
+           </div>
+
+        </div>
+    </footer>
+
+
+<script>
+
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
+$('.banner_main-list').slick({
   dots: true,
-  infinite: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+
+
+});
+
+$('.list-reviews-rev').slick({
+
+
+
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  prevArrow: '<div id="prev" type="button" class="btn btn-juliet"><img src="img/sliderleft.png"></div>',
+            nextArrow: '<div id="next" type="button" class="btn btn-juliet"><img src="img/sliderright.png"></div>',
+            responsive: [
+    {
+      breakpoint: 1325,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      },
+
+
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+]
+});
+
+$('.bs_list').slick({
+  dots: true,
+  arrow: true,
+  infinite: true,
   speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 4,
 
-  prevArrow:"<img class='sli12-scu sli12-scu-left' src='slider-arrow_left.png'>",
-            nextArrow:"<img class='sli12-scu sli12-scu-right' src='slider-arrow_right.png'>",
+  prevArrow: '<div id="prev" type="button" class="btn btn-juliet"><img src="img/sliderleft.png"></div>',
+            nextArrow: '<div id="next" type="button" class="btn btn-juliet"><img src="img/sliderright.png"></div>',
 
-  responsive: [
+            responsive: [
     {
-      breakpoint: 1294,
+      breakpoint: 1325,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -62,14 +909,14 @@ for (let a = 1; a <= $(".mobile ul li").length; a++){
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 921,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 540,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -79,1603 +926,11 @@ for (let a = 1; a <= $(".mobile ul li").length; a++){
     // settings: "unslick"
     // instead of a settings object
   ]
+
 });
-});
-    
 
-    </script>
 
-    <style>
-.integrity_img img{
-    margin-bottom:-2px;
-}
-
-.header.scrolled 
-.slick-slide img {
-    display: block;
-    margin: 0 auto;
-}
-.imgmap1{
-    max-width: 100%;width: 100%;
-}
-.sli12-scu{
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 43px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0,-50%);
-    -ms-transform: translate(0,-50%);
-    transform: translate(0,-50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: 0;
-    background: 0 0;
-}
-.sli12-scu-left{
-    left: -45px;
-}
-
-.sli12-scu-right{
-    right: -45px;
-}
-.our_clients-block{
-
-}
-.our_clients-block .slick-dots li.slick-active button:before {
-    opacity: 1;
-    color: #39b883;
-}
-.question_form-upheader{
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-}
-.question-left_form{
-    background-color: #183c6b;
-    margin-top: 140px;
-    padding-bottom: 80px;
-}
-body .header_inside-addition{
-    background: unset;
-    background-color: #232d43!important;
-}
-.question-left_form .site_form-1{
-text-align: center;
-}
-
-.question_form-header{
-    font-size: 32px;
-    text-align: center;
-    margin-top: 80px;
-    color: white;padding-top: 66px;
-}
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-html {
-	height: 100%;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-*{
-   color: #232d43;
-    box-sizing: border-box;
-}
-
-@font-face{
-  font-family: 'GothamPro';
-  src:  url('source/GothamPro.eot');
-  src:  url('source/GothamPro.eot') format('embedded-opentype'),
-    url('source/GothamPro.woff') format('woff'),
-    url('source/GothamPro.ttf') format('truetype'),
-    url('source/GothamPro.svg') format('svg');
-}
-
-@font-face{
-  font-family: 'GothamProMedium';
-  src:  url('source/GothamPro-Medium.eot');
-  src:  url('source/GothamPro-Medium.eot') format('embedded-opentype'),
-    url('source/GothamPro-Medium.woff') format('woff'),
-    url('source/gothampro_medium.ttf') format('truetype'),
-    url('source/GothamPro-Medium.svg') format('svg');
-}
-
-body{font-family: "GothamProMedium";}
-.effective_plan-info {margin-top: 0;}
-.header{
-    padding-top: 50px;
-    color: #ffffff;
-    background: url('backgorund_main.png') no-repeat center top fixed;
-        -webkit-background-size: cover;
-        background-position-y: -100px;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        padding-bottom: 100px;
-}
-.container{max-width: 1200px; margin: 0 auto;}
-
-.nav_menu {display: flex; justify-content: space-between;align-items: center;}
-.menu_block{display:flex;}
-.menu_block li{margin-left: 36px; color: #ffffff;}
-.menu_block a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.phone_header{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 25px;
-}
-.phone_info-block{
-    display: flex;
-    flex-direction: column;
-}
-.email_header{
-    text-decoration: none;
-    color: #ffffff;
-    text-align: right;
-}
-.main_site-info{padding-top: 100px; margin: 0 auto; text-align: center;
-max-width: 900px;line-height: 56px;} 
-h1{ text-transform: uppercase;
-font-size: 50px; color: #ffffff;
-}
-.after_header-title{
-    color: #ffffff;
-    font-size: 24px;line-height:30px;
-    padding-top: 20px;max-width: 520px;
-    margin: 0 auto;
-}
-.main_site-info h3{
-    font-size: 17px;
-    color:#ffffff;
-}
-.site_main-form{padding-top: 80px; margin: 0 auto; text-align: center;}
-.inp-form{width: 260px; height: 72px; margin-right: 10px; border-radius: 40px; color: #ffffff; border-color: white; padding: 20px;background-color: transparent;}
-.site_form-1{margin-top: 25px;}
-.site_main-form h2{
-    color: #ffffff;
-max-width: 340px;
-margin: 0 auto;
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #ffffff;
-    font-size: 16px;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #ffffff;
-   opacity:  1; font-size: 16px;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #ffffff;
-   opacity:  1; font-size: 16px;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #ffffff; font-size: 16px;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #ffffff; font-size: 16px;
-}
-::placeholder { /* Most modern browsers support this now. */
-    color: #ffffff; font-size:16px;
-}
-.consult_btn{
-    background-color: #39b883;
-    padding: 20px;border-radius: 40px; color: #ffffff; font-size: 14px;
-    border: none;
-    outline: none;
-    width: 260px; height: 72px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.icon_inp{padding-left: 52px;}
-.icon_inp{
-    background-image: url(russia1.png);   
-    background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    background-position: 20px; /*Позиционируем*/
-}
-.header_effective{
-font-size: 36px;
-max-width: 700px;
-line-height: 44px;
-}
-.header_effective span{
-    color: #39b883;
-
-}
-section{
-    /*margin-top: 80px;*/
-}
-.features-effective-list{
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-.feature-item p{
-    width: 180px;
-    padding-top: 15px;
-    font-family: "GothamPro";
-}
-.integration_text-info{
-    margin-bottom: -2px;
-    margin-top: 80px;
-background-color: #f4f6fa;
-}
-.inegrity-items{
-    position: relative;
-}
-.header_integration{
-    font-size: 32px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 60px;
-    line-height: 44px;
-    padding-bottom: 30px;
-   /* border-bottom: 1px solid #39b883;*/
-}
-.text-integr{
-    max-width: 780px;
-    position: absolute;
-    top: 200px;
-    right: 200px;font-family: "GothamPro";
-    line-height: 28px;
-    font-size: 18px;
-   
-}
-.btn_site{
-    border-radius: 40px;
-    background-color: #39b883;
-    text-decoration: none;
-    margin-top: 50px;
-    display: block;
-    color: white;
-    width: 346px;
-    padding: 30px 50px 30px 30px;
-}
-.width_line1{ width: 254px; height: 2px; background-color: #39b883; margin: 0 auto} 
-.text-integr>p{ margin-bottom: 40px;}
-.podbor_list{    padding-top: 51px;
-    display: flex;
-    justify-content: space-between;
-}
-.header_podbor{font-size: 40px; color: #ffffff;padding-top: 90px; margin: 0 auto; text-align: center; text-transform: uppercase;
-max-width: 750px; 
-}
-.podbor_text-info{ background-color: #232d43; padding-bottom: 90px;}
-.podbor_list p{width: 225px;}
-.btn_site {
-    position: relative;
-}
-.btn_site:after{
-    content: "";
-    position: absolute;
-    background-image: url(rightsv.svg);
-    background-size: cover;
-    width: 35px;
-    height: 36px;
-    fill: orange;
-    color: whitesmoke;
-    right: 47px;
-    top: 27px;
-}
-.header_after-podobor, .header_after-offer{
-    color: #ffffff;
-    max-width: 428px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    line-height: 36px;
-    font-size: 29px;
-    margin-bottom: 40px;
-}
-.header_after-offer{color: black; }
-.item_list p{
-    color: #ffffff;
-    padding-top: 15px;
-}
-.podbor_takealook{
-    margin-top: 15px;
-    display: block;
-    width: 180px;
-    color: #39b883;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    position: relative;
-}
-.podbor_takealook:after{
-    content: "";
-    position: absolute;
-    background-image: url(rrw1.png);
-    background-size: cover;
-    width: 24px;
-    height: 12px;
-    fill: orange;
-    color: whitesmoke;
-    right: 28px;
-    top:50%;
-    transform: translate(0, -50%);
-}
-
-.realised_header, .offer_header{padding-bottom: 30px; padding-top: 50px; max-width: 630px;
-font-size: 32px;
-line-height:36px;
- margin: 0 auto;
- text-align: center;
-}
-.realised_solution{
-    padding-bottom: 90px;
-}
-.solution_list{margin-top: 60px;}
-.sol_item h3, .sol_item h4{
-    color:#39b883; margin-bottom: 10px;  line-height: 28px;
-}
-.sol_item{font-family: "GothamPro";}
-.sol_item h3{font-size: 18px;
-    max-width: 360px;
-}
-.sol_item  p{
-    line-height: 30px;
-}
-.sol1{ width: 70% }
-
-.itemsol {
-
-}
-.solution_list,.itemsol{display: flex; justify-content: space-between;}
-
-.sol2 {border-top: 3px dotted #c0c0c0;display: flex;
-    flex-direction: column;width: 26%;}
-
-.itemsol{padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 18px;
-    border-bottom:3px dotted #c0c0c0;
-    font-weight: 800;
-}
-.itemsolinside{
-    line-height: 30px;
-    width: 215px;
-}
-.pricesol{
-    color: #39b883;
-}
-.lookcase_btn{
-    border-radius: 40px;
-    background-color: #39b883;
-    text-decoration: none;
-    margin-top: 50px;
-    display: block;
-    color: white;    align-self: end;
-    width: 276px;
-    padding: 30px 50px 30px 30px;
-    position: relative;
-}
-.lookcase_btn:after{
-    content: "";
-    position: absolute;
-    background-image: url(reload.png);
-    background-size: cover;
-    width: 22px;
-    height: 23px;
-    fill: orange;
-    color: whitesmoke;
-    right: 29px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-.offer_block{
-    background-color: #f3f6f9;
-    padding-bottom: 100px;
-}
-.slick-dots{
-    bottom: -90px;
-}
-.podheader_clients{
-    max-width: 436px;
-    padding-bottom: 129px;
-    line-height: 1.6em;
-    margin: 0 auto;
-}
-.header_after-offer{
-    margin-top: 0px;
-}
-.offer_header{
-    font-family: "GothamProMedium";
-    font-size: 41px;
-    line-height: 51px;
-    max-width: 772px;
-    padding-top: 96px;
-}
-.offer_header-item{
-    padding-bottom: 15px;
-    font-size: 37px;
-    font-weight: 400;
-    color: #39b883;
-   font-family: "GothamPro";
-}
-.offer_block-list{display: flex; justify-content: space-between;  padding-top: 90px;}
-.plus{
-    font-size: 42px;
-    align-self: center; font-family: "GothamPro";
-    font-weight: 300;
-    color: #39b883
-}
-.offer_item p{    max-width: 199px; line-height: 1.6em}
-.header_how
-{
-    padding-bottom: 80px;
-    padding-top: 110px;
-    margin: 0 auto;
-    max-width: 274px;
-    line-height: 40px;
-    text-align: center; font-family: "GothamPro";
-    font-size: 32px;
-}
-
-.header-how_works{
-    font-size: 46px;
-    text-align: right;
-    color: #39b883;
-}
-.how_works-list{display: flex; flex-wrap: wrap; gap: 20px}
-
-.how_works_list-item{
-    height: 249px;
-    background-color: white;
-    padding: 38px 35px;
-}
-
-.text-offer{
-    max-width: 120px;
-    line-height: 25px;
-    padding-top: 50px;
-}
-.how_works_list-item{
-    border-radius: 40px;
-}
-.header_clients{
-    font-size: 36px;
-text-align: center;
-    padding-top: 60px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    /*margin-bottom: 40px;*/
-}
-.map_block{position: relative;}
-.map_frame-yandex {position: absolute;}
-.imgmap1 {position: absolute;     z-index: -100; }
-.header_map {background-color: white; border-radius: 30px; width: 500px; padding: 40px; margin-top: 80px;} 
-.flexfooter1 {
-    display: flex;
-    justify-content: flex-end;
-}
-.srsd {margin-bottom: 60px;}
-.header_map_item{
-    margin-bottom: 15px;
-
-}
-.header_map_item p{
-    color: #39b883;font-size: 16px;
-
-}
-.header_map_item a{
-    font-size: 20px;
-    text-decoration: none;
-    color: #232d43;line-height: 1.4em;
-    margin-top: 8px;
-    display: block;
-}
-
-
-@media screen and (min-width:1366px) and (max-width:1660px) {
-    .text-integr {right: 0px;max-width: 649px; padding-right: 20px; margin-top: -51px;}
-
-    .width_line1 {
-
-    margin-top: 25px;
-}
-.header_integration {
-    font-size: 32px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    z-index: 10000003400;
-    position: relative;
-
-    padding-top: 60px;
-    line-height: 44px;
-    padding-bottom: 30px;
-    /* border-bottom: 1px solid #39b883; */
-}
-}
-
-
-@media screen  and (max-width:1032px) {
-    .nav_menu { flex-direction: column;gap: 13px; }
-
-    h1 {
-  
-    font-size: 36px;
-}
-
-.site_form-1 {
-    margin-top: 25px;
-    /* display: flex; */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-.header_effective {
-    font-size: 36px;
-    max-width: 100%;
-    line-height: 44px;
-    text-align: center;
-}
-
-.features-effective-list {
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 44px;
-    align-items: center;
-}
-
-
-}
-
-
-@media screen  and (max-width:1365px) {
-    .container1{padding: 5px;}
-    .container{padding: 5px;}
-    .inegrity-items {
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-}
-.text-integr{position: unset;max-width: 100%;}
-
-}
-
-
-@media screen  and (max-width:1240px) {
-    .header{background-position-y: 0px;}
-
-.offer_block-list {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 90px;
-    flex-direction: column;
-    gap:15px;
-    align-items: center;
-}
-
-    .integrity_img img{max-width: 100%; }
-
-    .podbor_list {
-    padding-top: 51px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 44px;
-}
-
-.sol2 {
-    border-top: 3px dotted #c0c0c0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.sol1 {
-    width: 100%;
-}
-.solution_list, .itemsol{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-}
-
-@media screen  and (max-width:675px) {
-
-    .srsd {
-    margin-bottom: 60px;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-    .podheader_clients{text-align: center;}
-.sli12-scu{display: none!important;}
-    .how_works-list > div{
-        width: 100%!important;
-        max-width: 100%;
-    }
-.header_integration{font-size: 24px;}
-    .header_podbor{
-        font-size: 24px;
-    }
-    .header_effective{font-size: 24px;}
-    .menu_block {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.main_site-info{padding-top: 40px;}
-h1{font-size: 24px; line-height: 28px;}
-}
-
-/*new*/
-.header_effective , .header_integration , .realised_header, .offer_header , .header_how , .header_clients{
-
-    color: #232d43;
-}
-.header-how_works {
-    border-bottom: 1px solid #c8cad0;
-    padding-bottom: 28px;
-}
-
-.text-offer {
-    padding-top: 30px;
-}
-.how_works-list{justify-content: space-between;}
-
-p{
-    line-height: 25px;
-}
-.header_map{
-    display: flex;
-    flex-direction: column;
-   
-}
-.srsd{
-   width: 143px!important; align-self: flex-end;
-}
-.map_yan{margin-bottom: 0px;}
-
-.pricesol {
-    color: #39b883;
-    align-self: center;
-}
-.question-left_form {
-    background-color: #232d43;
-
-}
-
-@media screen and (max-width: 1196px){
-.container {
-    padding: 23px;
-}
-
-.text-integr {
-    position: unset;
-    max-width: 100%;
-    padding: 23px;
-}
-
-}
-
-@media screen and (max-width: 1226px){
-
-.imgmap1{  display: none;  }
-
-.map_block{  background-image: url("mapimg.png")  };
-
-
-
-}
-
-
-.mobile div {
-    display: block;
-    position: fixed;
-    top: 16px;
-    right: 25px;
-  /*  background-color: #337AB7;*/
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    z-index: 9999999;
-    border: 4px solid #BFE2FF;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    box-sizing: content-box;
-}
-.mobile div span {
-    display: block;
-    position: absolute;
-    border: 1px solid black;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 13px;
-    transition-duration: .4s;
-
-}
-.mobile div span:nth-child(1) {
-    top: 14px;
-}
-.mobile div span:nth-child(2) {
-    top: 23px;
-}
-.mobile div span:nth-child(3) {
-    bottom: 14px;
-}
-.mobile div.active span:nth-child(1) {
-    transform: translate(-15px, 9px) rotate(-45deg);
-}
-.mobile div.active span:nth-child(2) {
-    transition-duration: 0s;
-    opacity: 0;
-}
-.mobile div.active span:nth-child(3) {
-    transform: translate(-15px, -9px) rotate(45deg);
-}
-.mobile nav {
-    display: block;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    z-index: 9999990;
-    transition-duration: .4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.mobile nav.open {
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100vw;
-    height: 100vh;
-    right: 0px;
-    bottom: 0px;
-    border-radius: 0;
-}
-.mobile nav ul {
-    display: none;
-}
-.mobile nav ul.show {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.mobile ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    width: 100%;
-    opacity: 0;
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.mobile ul li:not(:last-child) {
-    margin-bottom: 22px;
-}
-.mobile ul li a {
-    font-size: 24px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: #fff;
-}
-@keyframes fadein {
-    0% {
-        opacity: 0;
-         
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@media (min-width:1076px){
-    .mobile {
-        display: none;
-    }
-}
-
-@media (max-width:1076px){
-
-    .main_site-info h3 {
-    font-size: 17px;
-    line-height: 22px;
-    margin-top: 20px;
-}
-
-    .nav_menu{display: none;}
-}
-.mob_logo{
-    position: absolute;
-    top: 26px;
-}
-
-.map_frame-yandex {position: absolute; height: 100%; filter: grayscale(1);}
-
-.header_map{z-index: 1000; margin-bottom: 80px;}
-
-.offer_header-item{
-font-family: "GothamProMedium";
-}
-.offer_item p{
-    font-family: "GothamPro";
-    font-size: 19px;
-    max-width: 253px;
-}
-.offer_item{
-   /* width: 290px;*/
-}
-.offer_item.plus{
-   /* width: 22px;*/
-}
-
-/**/
-
-.offer_header{
-    font-family: "GothamProMedium";
-    font-size: 41px;
-}
-.offer_block-list{
-    max-width: 1140px;
-}
-
-.plus{font-size: 45px;}
-
-
-.header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header{
-    font-size: 41px;
-    line-height: 51px;
-    padding-top: 90px;
-    font-family: "GothamProMedium";
-}
-.question_form-header {padding-top: 70px;}
-
-.realised_header{max-width: 797px;}
-.header_how{max-width: 355px;}
-.podheader_clients{font-size: 23px; max-width: 630px; text-align: center;}
-.text-offer{
-font-size: 21px;
-line-height: 31px;
-}.how_works_list-item{height: 280px;}
-.header_how {
-    padding-bottom: 31px;
-}
-.how_works-list{padding-top: 51px;}
-
-.question_form-upheader{
-font-size: 18px;
-line-height: 26px;
-}
-.sol_item p {
-    line-height: 30px;
-    text-align: justify;
-    font-size: 17px;
-}
-
-.sol_item h3, .sol_item h4{
-    font-family: "GothamProMedium";
-    
-}
-.sol_item h3{font-size: 28px;max-width: 515px; line-height:1.4em;}
-
-.sol1 {
-    width: 63%;
-}
-.sol2{
-    width:30%
-}
-.header_after-podobor{
-    max-width: 531px;
-}
-.podbor_list{
-    padding-top: 57px;
-}
-.item_list p{font-size: 21px; line-height: 31px;}
-
-.podbor_list p {
-    width: 300px;
-}
-.feature-item p{font-size: 18px;}
-
-.feature-item p {
-    width: 227px;
-}
-.itemsolinside {
-    line-height: 30px;
-    width: 215px;
-    font-size: 20px;
-}
-.podbor_takealook{
-    font-size: 19px;
-
-}
-.podbor_takealook:after{
-
-}
-
-@media screen and (max-width: 768px){
-    .podheader_clients{padding-bottom: 70px;}
-    .question-left_form{margin-top: 80px; padding-bottom: 40px;}
-    .question_form-header{margin-top: 0px;}
-    .slick-slide img {margin: 0 auto;}
-    .offer_block{padding-bottom: 40px;}
-    .realised_solution{padding-bottom: 40px;}
-    .podbor_text-info {padding-bottom: 40px;}
-    .btn_site{margin-top: 25px; margin-bottom: 40px;}
-    .integration_text-info {margin-top: 40px;}
-    .offer_header-item{font-size: 20px;}
-    .header-how_works{font-size: 28px;}
-    .offer_item p{font-size: 16px; text-align: center;}
-    .text-offer {font-size: 16px;}
-
-    .offer_header-item{text-align: center;}
-
-    .header_effective, .header_integration, .realised_header, .offer_header, .header_how, .header_clients, .question_form-header {
-        font-size: 24px;
-        line-height: 26px;
-        padding-top: 30px;
-    }
-
-    .header_after-podobor, .header_after-offer,.podheader_clients, .question_form-upheader{
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .podbor_list p{font-size: 16px}
-
-    .podbor_takealook{font-size: 16px;}
-
-    .podbor_takealook:after {
-    right: 45px;
-    top: 50%;
-}
-
-.sol_item h3{font-size: 20px;}
-
-.sol1 {
-    width: 100%;
-}
-
-.sol2 {
-    width: 100%;
-}
-
-.itemsolinside {
-    margin: 0 auto;
-    text-align: center;
-}
-.lookcase_btn{
-    align-self: center;
-}
-
-}
-
-
-.text-integr {
-    position: unset;
-}
-.text-integr {
-    padding-top: 20px;
-    margin: 0px;
-    z-index: 2;
-}
-.inegrity-items{display: flex;gap:30px}
-
-.text-integr>p {
-    margin-bottom: 40px;
-    text-align: justify;font-size: 17px; line-height: 28px;
-}
-.site_design-circles{
-    position: absolute;
-}
-.circle1{
-    width: 900px;
-    height: 900px;
-    left: -152px;
-    top: -147px;
-    border-radius: 100%;
-    position: absolute;
-    border: 3px solid #e9ebef;
-}
-
-.circle2{
-    width: 700px;
-    height: 700px;
-    left: -152px;
-    top: -147px;
-    border-radius: 100%;
-    margin: 0 auto;
-    margin-top: 50%;
-    transform: translate(0, -50%);
-    border: 3px solid #e9ebef;
-}
-.circle3{
-    width: 500px;
-    height: 500px;
-    left: -152px;
-    top: -147px;
-    border-radius: 100%;
-    margin: 0 auto;
-    margin-top: 50%;
-    transform: translate(0, -50%);
-    border: 3px solid #e9ebef;
-}
-
-.header_integration .width_line1 {
-    margin-top: 25px;
-}
-.site_design-circles {
-    position: absolute;
-    z-index: 1;
-}
-.integrity_img{
-    z-index: 2;
-}
-
-.text-integr {
-    right: 0px;
-    max-width: 80%;
-    padding-right: 88px;}
-.header_integration{z-index: 2; position: relative;}
-
-.podbor_text-info{position: relative; z-index: 2;}
-
-@media screen and (max-width: 768px){
-
-    .site_design-circles{display: none;}
-
-    .text-integr{padding: 10px; max-width: 100%;}
-}
-
-/*.sticky_header.scrolled{
-    background-color: #232d43;
-    position: fixed;
-    max-width: 100%;
-    width: 100%;
-    padding-top: 25px;
-    z-index: 10000;
-    padding-bottom: 25px;
-}*/
-/*.delpad{
-    padding-top: 0px;
-}*/
-
-.lookcase_btn, .consult_btn, .btn_site{
-    transition: 0.3s;
-}
-.lookcase_btn:hover, .consult_btn:hover, .btn_site:hover{
-    background: #16935f;
-}
-.header_top{
-    padding-top: 50px;
-    color: #ffffff;
-    background: url(backgorund_main.png) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    background-position-y: -51px;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
- 
-    height: 100%;
-    padding-bottom: 150px;
-}
-
-.header_inside{
-    position: sticky;
-    top: 0;
-    background: url(backgorund_main.png) no-repeat center top fixed;
-    width: 100%;
-    background-size: cover;
-    padding-top: 25px;
-    padding-bottom: 25px;   z-index:1000;
-}
-
-    </style>
-</head>
-<body>
-
-    <header class="header_inside">
-        <div class="sticky_header">
-        <div class="container">
-
-            <div class="mobile">
-
-
-                <a class="mob_logo" href="#">
-                    <img src="logo.png">
-                </a>
-
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Оборудование</a></li>
-                    <li><a href="#">Консалтинг</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Расходные материалы</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="nav_menu">
-                <a href="#">
-                    <img src="logo.png">
-                </a>
-                <ul class="menu_block">                        
-                    <li><a href="#">Оборудование</a></li>
-                    <li>Консалтинг</li>
-                    <li>Кейсы</li>
-                    <li>Расходные материалы</li>
-                </ul>
-                <div class="phone_info-block">
-                    <a class="phone_header" href="tel:79764121231">
-                        8 (4722) 40-22-44 
-                    </a>
-                    <a class="email_header" href="mail:sovet@gksovet.ru">
-                        sovet@gksovet.ru
-                    </a>
-                </div>
-            </div>
-</div></div>
-</header>
-
-<section class="header_top">
-
-  
-
-<div class="container">
-            <div class="main_site-info">
-                <h1>Подберем и поставим  необходимое оборудование </h1>
-                <p class="after_header-title"> для мебельных, деревообрабатывающих  и камнеобрабатывающих предприятий</p>
-
-                <h3>Автоматизируем производственные и бизнес-процессы</h3>
-            </div>
-
-            <div class="site_main-form">
-                <h2>Получите бесплатную консультацию эксперта через 2 минуты</h2>
-
-                <form class="site_form-1">
-                    <input class="inp-form" type="text" placeholder="Введите имя">
-                    <input class="inp-form icon_inp" type="text" placeholder="+7 (___) ___-__-__">
-                    <button class="consult_btn">Получить консультацию</button>
-                </form>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="effective_plan-info">
-        <div class="container">
-            <h2 class="header_effective">Поможем Вашему предприятию <span>быть эффективным</span></h2>
-
-            <div class="features-effective-list">
-                <div class="feature-item">
-                    <img src="effective1.png">
-                    <p>Производства 
-                        корпусной мебели 
-                        от малых предприятий 
-                        до крупнейших компаний</p>
-                </div>
-
-                <div class="feature-item">
-                    <img src="effective2.png">
-                    <p>Дверные компании, которые имеют  полный/частичный производственный цикл</p>
-                </div>
-
-                <div class="feature-item">
-                    <img src="effective3.png">
-                    <p>Камне- обрабатывающие производстка и фабрики</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="integration_text-info">
-        <div class="container1">
-        <h2 class="header_integration">Интегрируем новейшие технологии,  подбираем оптимальные решения, оптимизируя расходы<div class="width_line1">
-
-        </div> </h2>
-        
-        <div class="inegrity-items">
-
-            <div class="site_design-circles">
-                
-                   <div class="circle1">
-
-                        <div class="circle2">
-
-                            <div class="circle3"></div> 
-
-                        </div> 
-
-                   </div> 
-                   
-            </div>
-
-            <div class="integrity_img">
-             <img src="dir1.png">
-            </div>
-            
-            <div class="text-integr">
-                <p>СОВЕТ — надежный партнёр в сфере оптимизиции, автоматизации и поставках современных решений в деревообработке и обработке камня. За более чем 20 лет эффективной работы наших специалистов на рынке России и странах СНГ апртнёрами компании стали лидирующие предприятия в области производства мебели, дверей, интерьерных решений, изделий из натурального и искусственного камня.</p>
-                <p>Основное наше преимущество — внедрение оптимального решения исходя из подставленной задачи и бюджета. За более чем 20 лет работы ан рынке мы смогли реализовать решения в компаниях различного профиля и масштаба. Это обеспечило возможность продемонстрировать предлагаемое решение на работающем предприятии.</p>
-            
-                <a class="btn_site" href="#">
-                    Начать сотрудничество
-                </a>
-            </div>
-           
-
-        </div>
-    </div>
-    </section>
-
-    <section class="podbor_text-info">
-        <div class="container">
-            <h2 class="header_podbor">Подбираем технологическое оборудование</h2>
-            <p class="header_after-podobor"> исходя из ваших задач и бюджета у проверенных поставщиков</p>
-            <div class="width_line1">
-
-            </div> 
-            <div class="podbor_list">
-                <div class="item_list">
-                    <img src="podbor1.png">
-                    <p>Решения для мебельных  и деревообрабатывающих  производств</p>
-                    <a class="podbor_takealook" href="#">Смотреть</a>
-                </div>
-
-                <div class="item_list">
-                    <img src="podbor2.png">
-                    <p>Решения для  камнеобрабатывающих производств</p>
-                    <a class="podbor_takealook" href="#">Смотреть</a>
-                </div>
-
-                <div class="item_list">
-                    <img src="podbor3.png">
-                    <p>Расходные<br>материалы для <br> оборудования</p>
-                    <a class="podbor_takealook" href="#">Смотреть</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="realised_solution">
-        <div class="container">
-            <h2 class="realised_header">Реализовали эффективные решения
-                в компаниях различного профиля</h2>
-                <div class="width_line1">
-
-                </div> 
-
-                <div class="solution_list">
-
-                    <div class="sol_item sol1">
-                        <h3>Модернизация аспирационного 
-                            участка мебельного производства</h3>
-
-<h4> Компания «Ангстрем», г.Воронеж </h4>
-
-<p>В результате исследования на основании предоставленных компанией данныъ о производственных циклах, сменном режиме, коэффициенте одновременности и рабочем времени отдельных станков была разработана и рассчитана оптимальная концепция системы аспирации. Подключение к оборудованию было оснащено автоматическими шиберами, так как они работают в тандеме с частотным преобразователем. Это позволило в автоматическом режиме регулировать необходимый обхем воздуха в зависимости от числа работающих единиц. Установка системы аспирации, собирающей отходны автоматически, позволила нам добиться тройного эффекта: увеличить полезное время работы станков, обеспечить чистоту на предприятии и сэкономить производственные прощади, а также вследствие чего происходит увеличение реусрса работы станков и инструмента.</p>
-
-                    </div>
-
-
-                    <div class="sol_item sol2">
-             
-
-                        <div class="itemsol"><div class="itemsolinside">Рекламации</div><div class="pricesol"> - 30%</div></div>
-                        <div class="itemsol"><div class="itemsolinside">Эксплуатационные затраты</div> <div class="pricesol"> - 8%</div></div>
-                        <div class="itemsol"><div class="itemsolinside">Затраты на инструмент</div><div class="pricesol"> - 22%</div></div>
-                        <div class="itemsol"><div class="itemsolinside">Прибыль в месяц</div><div class="pricesol"> + 5%</div></div>
-
-                        <a class="lookcase_btn" href="">Смотреть другой кейс</a>
-
-                    </div>
-
-                </div>
-
-        </div>
-    </section>
-    
-    <section class="offer_block">
-        <div class="container">
-            <h2 class="offer_header">Предлагаем комплексные решения
-                по оптимизации производств:
-                </h2> 
-                <p class="header_after-offer"> от разработки решения  до поставки оборудования</p>
-
-                <div class="width_line1">
-
-                </div>
-
-                <div class="offer_block-list">
-                    <div class="offer_item">
-                        <div class="offer_header-item">Действуем</div>
-                        <p>в интересах заказчика, 
-                            а не производителя решений</p>
-                    </div>
-                    <div class="offer_item plus">
-                        +
-                    </div>
-                    <div class="offer_item">
-                        <div class="offer_header-item">Демонстрация</div>
-                        <p style="max-width: 278px;">внедренных решений <br>
-                            на примере дейсвующих
-                            предприятий</p>
-                    </div>
-                    <div class="offer_item plus">
-                        +
-                    </div>
-                    <div class="offer_item">
-                        <div class="offer_header-item">Внедрение</div>
-                        <p>решений исходя 
-                            из поставленной задачи 
-                            и бюджета</p>
-                    </div>
-                </div>
-
-
-                <div class="how_works-block">
-                    <div class="header_how">Как происходит
-                        работа?</div>
-
-                        <div class="width_line1">
-
-                        </div>
-
-                    <div class="how_works-list">
-
-                        <div style="width: 32%" class="how_works_list-item">
-<div class="header-how_works">
-    01/
-</div>
-
-<div class="text-offer">
-    Аудит
-производственных
-процессов
-</div>
-</div>
-
-<div style="width: 32%" class="how_works_list-item">
-    <div class="header-how_works">
-        02/
-    </div>
-    
-    <div class="text-offer">
-        Аудит
-    производственных
-    процессов
-    </div>
-    
-                        </div>
-
-                        <div style="width: 32%" class="how_works_list-item">
-                            <div class="header-how_works">
-                                03/
-                            </div>
-                            
-                            <div class="text-offer">
-                                Аудит
-                            производственных
-                            процессов
-                            </div>
-                            
-                                                </div>
-
-                                                <div style="width: 49%" class="how_works_list-item">
-                                                    <div class="header-how_works">
-                                                        04/
-                                                    </div>
-                                                    
-                                                    <div class="text-offer">
-                                                        Аудит
-                                                    производственных
-                                                    процессов
-                                                    </div>
-                                                    
-                                                                        </div>
-
-
-    <div style="width: 49%" class="how_works_list-item">
-                                                                            <div class="header-how_works">
-                                                                                05/
-                                                                            </div>
-                                                                            
-                                                                            <div class="text-offer">
-                                                                                Аудит
-                                                                            производственных
-                                                                            процессов
-                                                                            </div>
-                                                                            
-                      </div>
-
-                    </div>
-
-                </div>
-
-        </div>
-    </section>
-
-
-
-    <section class="our_clients-block">
-
-        <div class="container">
-
-            <div class="header_clients">Наши клиенты</div>
-
-            <p class="podheader_clients">лидирующие мебельные, деревообрабатывающие
-                и камнеобрабатывающие предприятия РФ и СНГ</p>
-
-            <div class="client_list">
-
-                <div class="client_list-item">
-
-                    <img class="client_list-img" src="client1.png">
-            
-
-                </div>
-
-                <div class="client_list-item">
-
-                    <img class="client_list-img" src="client1.png">
-                
-
-                </div>
-
-                <div class="client_list-item">
-
-                    <img class="client_list-img" src="client1.png">
-                
-
-                </div>
-
-                <div class="client_list-item">
-
-                    <img class="client_list-img" src="client1.png">
-                
-
-                </div>
-
-                <div class="client_list-item">
-
-                    <img class="client_list-img" src="client1.png">
-                
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="question-left_form">
-
-        <div class="container">
-
-            <div class="question_form-header">Остались вопросы?</div>
-
-            <p class="question_form-upheader">Оставьте заявку на бесплатную консультацию</p>
-
-
-            <form class="site_form-1">
-           
-                <input class="inp-form icon_inp" type="text" placeholder="+7 (___) ___-__-__">
-                <button class="consult_btn">Получить консультацию</button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <section class="map_block">
-
-       
-        <iframe class="map_frame-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afde356afc35c42d66ef35bfb79047ce22a54d999a94f5bb9b0c6a8548f657f03&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-       
-        <div class="container flexfooter1">
-            <div class="header_map">
-                <img class="srsd" src="blacklogo.png">
-
-                <div class="header_map_item">
-                    <p>Телефон:</p>
-                    <a href="tel:84722402244">8 (4722) 40-22-44</a>
-                </div>
-
-
-                <div class="header_map_item">
-                    <p>Почта:</p>
-                    <a href="mail:sovet@gksovet.ru">sovet@gksovet.ru</a>
-                </div>
-
-
-                <div class="header_map_item">
-                    <p>Адрес:</p>
-                    <a href="mail:sovet@gksovet.ru">308023, Белгородская обл,  Белгород г, Промышленная ул, д.15, кв(оф.) 5</a>
-                </div>
-
-
-                <div class="header_map_item map_yan">
-                  <img src="yanimg.png">
-                </div>
-
-                <div class="header_map_item">
-                    <img src="gisimg.png">
-                  </div>
-
-            </div>
-        </div>
-
-    </section>
+</script>
 
 </body>
 </html>
