@@ -1229,3 +1229,17 @@ right: 0px;
 }
 
 .article_block{margin-bottom: 100px;}
+.data_article{
+    font-size: 12px;
+    color:#949596;
+    margin-bottom: 30px;display: block;
+    padding-left: 20px;
+    position: relative;
+}
+.data_article:before{
+    position: absolute;
+    left: 0px;
+    transform: translate(0px, -50%);
+    top: 50%;
+    content: url(../img/cal.png);
+}
