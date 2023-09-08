@@ -2,6 +2,34 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+a{text-decoration: none;}
+
+.category_first-catalog{
+    display: flex;
+}
+.item_user-nav:hover svg path{
+    fill: #71BC4A;
+}
+.item_user-nav:hover span{
+    color:#71BC4A;
+}
+
+.item_user-nav:hover .element-basket_count {color: white;}
+
+a:hover{
+    color:#71BC4A;
+}
+
+.block {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.market_item:hover span{
+    color:#71BC4A;
+}
+.main_items-menu-footer_block li a:hover{ color:#71BC4A;}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1228,7 +1256,6 @@ right: 0px;
     margin-left: 10px;
 }
 
-
 .data_article{
     font-size: 12px;
     color:#949596;
@@ -1242,4 +1269,31 @@ right: 0px;
     transform: translate(0px, -50%);
     top: 50%;
     content: url(../img/cal.png);
+}
+
+@media screen and (max-width: 780px){
+
+    .market_item {
+        margin-left: 5px;
+    }
+
+    .market_item span{font-size: 12px;}
+
+    .item_user-nav span{ font-size: 14px;}
+
+}
+
+
+.reset_all-filter{text-decoration: underline;}
+
+.btn_basket-add:hover{color: white;}
+
+.content a{text-decoration: underline;}
+
+.content a:hover{
+    text-decoration: none;
+}
+
+.itemweare:hover span{
+color:#71BC4A;
 }
