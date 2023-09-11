@@ -50,7 +50,39 @@ $( document ).ready(function() {
             <div class="menu">
                 <nav>
                    <ul>
-                    <li><img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a></li>
+                    <li class="mobile1_menu-first">
+                        <img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a>
+                    
+                        <div class="menu_catalog_list">
+                            <ul class="menu-m1s">
+                                <div class="stolbec_cat1">
+                                    <li><a class="leveltop-menu-item" href="#">Детокс</a></li>
+                                    <li><a class="leveltop-menu-item" href="#">Здоровье</a></li>
+                                    <li>
+                                        <a class="leveltop-menu-item" href="#">Красота</a>
+                                        
+                                    </li>
+                                </div>
+                                <div class="stolbec_cat1">
+                                    <li><a class="leveltop-menu-item" href="#">Новости</a>
+                                       
+                                    </li>
+                                    
+                                    <li><a class="leveltop-menu-item" href="#">Похудение</a></li>
+            
+                                    <li>
+                                        <a class="leveltop-menu-item" href="#">Красота</a>
+                                       
+                                    </li>
+                                </div>
+                                <div class="stolbec_cat1">
+                                <li><a class="leveltop-menu-item" href="#">Рецепты для детей</a></li></div>
+
+                            </ul>
+                        </div>
+
+
+                    </li>
                     <li><a href="#">Похудение</a></li>
                     <li><a href="#">Иммунитет</a></li>
                     <li><a href="#">О нас</a></li>
@@ -905,6 +937,13 @@ $( document ).ready(function() {
 <script>
 
 $(document).ready(function(){   
+
+    $(".mobile1_menu-first").click(function(){
+
+        $(".mobile1_menu-first").find(".menu_catalog_list").fadeToggle();
+
+    });
+
     var $element = $('#op23');
     let counter = 0;
 $(window).scroll(function() {
