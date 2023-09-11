@@ -3,7 +3,11 @@
    License: none (public domain)
 */
 
+header > a{display: none;}
 
+.bs-insideitm a:hover{
+    opacity: 0.7;
+}
 
 .site_element-left_item:hover {
     opacity: 0.7;
@@ -28,6 +32,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding-top: 20px;
   }
   
   /* Ссылки внутри выпадающего списка */
@@ -1274,11 +1279,11 @@ right: 0px;
         padding-bottom: 16px;
         position: absolute;
         font-size: 12px;
-        top: 13px;
+        top: -6px;
         right: 11px;
     }
 
-    .banner_top-main {display: none;}
+   
 
     .site_element-left_item > img {width: 100%;}
 
@@ -1378,9 +1383,10 @@ right: 0px;
         display: block;
         float: left;}
         .main_items-menu-footer_block {
-            width: 46%;
+            width: 35%;
             display: inline-block;
-            text-align: center;
+            text-align: left;
+            margin-left: 44px;
         }
     .market_item {
         margin-left: 5px;
@@ -1402,6 +1408,7 @@ right: 0px;
 
 }
 
+.form_site_upheader{margin-bottom: 10px;}
 
 .reset_all-filter{text-decoration: underline;}
 
@@ -1416,3 +1423,5 @@ right: 0px;
 .itemweare:hover span{
 color:#71BC4A;
 }
+
+.form_site-marketing {display: none;}

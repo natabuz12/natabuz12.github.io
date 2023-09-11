@@ -568,7 +568,7 @@ $( document ).ready(function() {
 
                 <div class="list-reviews-img">
 
-                    <div class="review_item"> 
+                    <a href="#" class="review_item"> 
 
                         <img src="img/ozonf.png">
 
@@ -585,10 +585,10 @@ $( document ).ready(function() {
                         </div>
                         </div>
 
-                    </div>
+                    </a>
 
 
-                    <div class="review_item"> 
+                    <a href="#" class="review_item"> 
 
                         <img src="img/wbf.png">
 
@@ -605,10 +605,10 @@ $( document ).ready(function() {
                         </div>
                         </div>
 
-                    </div>
+                    </a>
 
 
-                    <div class="review_item"> 
+                    <a href="#" class="review_item"> 
 
                         <img src="img/ymf.png">
 
@@ -625,7 +625,7 @@ $( document ).ready(function() {
                         </div>
                         </div>
 
-                    </div>
+                    </a>
 
                 </div>
 
@@ -803,7 +803,7 @@ $( document ).ready(function() {
         </div>
     </section>
 
-    <section data-aos="fade-up"
+    <section id="op23" data-aos="fade-up"
     data-aos-duration="1700" class=" contactform-site bs-new">
         <div class="container">
 
@@ -903,28 +903,25 @@ $( document ).ready(function() {
 
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    let blocks = document.querySelectorAll('.block');
+
+$(document).ready(function(){   
+    var $element = $('#op23');
+    let counter = 0;
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop() + $(window).height();
+  //Если скролл до конца елемента
+  //var offset = $element.offset().top + $element.height();
+  //Если скролл до начала елемента
+  var offset = $element.offset().top
  
-    function checkBlocksVisibility() {
-        let windowHeight = window.innerHeight;
- 
-        blocks.forEach(block => {
-            let blockPosition = block.getBoundingClientRect().top;
- 
-            if (blockPosition < windowHeight - 100) {
-                block.style.opacity = "1";
-                block.style.transform = "translateY(0)";
-            }
-        });
-    }
- 
-    checkBlocksVisibility();
- 
-    window.addEventListener('scroll', function() {
-        checkBlocksVisibility();
-    });
+  if (scroll > offset + 600 && counter == 0) {
+    $('.form_site-marketing').fadeIn();
+    counter = 1;
+  }
 });
+
+ 
+   });
 
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
