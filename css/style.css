@@ -1430,3 +1430,14 @@ color:#71BC4A;
 .mobile1_menu-first .menu_catalog_list{display: none;}
 
 .mobile1_menu-first .menu-m1s {margin-top: 20px;}
+
+.mobile1_menu-first  .menu-m1s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile1_menu-first  .stolbec_cat1 {
+    width: 231px;
+    align-self: center;
+}
