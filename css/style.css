@@ -1424,4 +1424,9 @@ right: 0px;
 color:#71BC4A;
 }
 
-.form_site-marketing {display: none;}
+.bs-insideitm:hover {opacity: 0.8;}
+
+.form_site-marketing {display: none; }
+.mobile1_menu-first .menu_catalog_list{display: none;}
+
+.mobile1_menu-first .menu-m1s {margin-top: 20px;}
