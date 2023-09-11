@@ -19,6 +19,16 @@
     
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+$( document ).ready(function() {
+    AOS.init();
+});
+       
+      </script>
+
 
 </head>
 <body>
@@ -57,7 +67,7 @@
 
                 <div class="header_top2-phone_block">
                     <a href="tel:74959409669">+7 (495) 940-96-69</a>
-                    <span>Позвонить нам</span>
+                    <a href="tel:74959409669"><span>Позвонить нам</span></a>
                 </div>
 
 
@@ -93,7 +103,45 @@
              <a href="#" class="header_top-3_logo"><img src="img/logo.png"></a>
 
              <ul class="menu_nav-catalog">
-                <li class="category_first-catalog"><img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a></li>
+                <li class="category_first-catalog dropdown">
+                    
+                    <img class="dost-cat" src="img/Union.png"> <a href="#">Каталог</a>
+                
+                    <div class="dcfather"></div>
+                    <div class="dropdown-content">
+                    
+
+                        <div class="menu_catalog_list">
+                            <ul class="menu-m1s">
+                                <div class="stolbec_cat1">
+                                    <li><a class="leveltop-menu-item" href="#">Детокс</a></li>
+                                    <li><a class="leveltop-menu-item" href="#">Здоровье</a></li>
+                                    <li>
+                                        <a class="leveltop-menu-item" href="#">Красота</a>
+                                        
+                                    </li>
+                                </div>
+                                <div class="stolbec_cat1">
+                                    <li><a class="leveltop-menu-item" href="#">Новости</a>
+                                       
+                                    </li>
+                                    
+                                    <li><a class="leveltop-menu-item" href="#">Похудение</a></li>
+            
+                                    <li>
+                                        <a class="leveltop-menu-item" href="#">Красота</a>
+                                       
+                                    </li>
+                                </div>
+                                <div class="stolbec_cat1">
+                                <li><a class="leveltop-menu-item" href="#">Рецепты для детей</a></li></div>
+
+                            </ul>
+                        </div>
+
+                      </div>
+
+                </li>
                 <li><a href="#">Похудение</a></li>
                 <li><a href="#">Иммунитет</a></li>
                 <li><a href="#">О нас</a></li>
@@ -116,39 +164,39 @@
 
             <div class="banner_main-list">
 
-                <div class="banner_main-item">
+                <a href="#" class="banner_main-item">
 
                     <h2 class="bm_header">Берём от природы и
                         делаем для тебя</h2>
 
                     <img src="img/banner1.png" alt="">
 
-                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+                    <div href="#" class="bm_link"><span>Перейти в каталог</span></div>
 
-                </div>
+                    </a>
 
 
-                <div class="banner_main-item">
+                    <a href="#" class="banner_main-item">
 
                     <h2 class="bm_header">Берём от природы и
                         делаем для тебя 2</h2>
 
                     <img src="img/banner1.png" alt="">
 
-                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+                    <div href="#" class="bm_link"><span>Перейти в каталог</span></div>
 
-                </div>
+                    </a>
 
-                <div class="banner_main-item">
+                <a href="#" class="banner_main-item">
 
                     <h2 class="bm_header">Берём от природы и
                         делаем для тебя 3</h2>
 
                     <img src="img/banner1.png" alt="">
 
-                    <a href="#" class="bm_link"><span>Перейти в каталог</span></a>
+                    <div href="#" class="bm_link"><span>Перейти в каталог</span></div>
 
-                </div>
+                    </a>
 
             </div>
 
@@ -157,7 +205,8 @@
     </section>
 
 
-    <section class="block bestsellers_block ">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" bestsellers_block ">
         <div class="container">
             <h2 class="header_sec">Бестселлеры</h2>
             <div class="bs_list">
@@ -168,8 +217,8 @@
                         <div class="hit_item">
                             HIT
                         </div>
-                        <img src="img/chlorella1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"> <img src="img/chlorella1.png"> </a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2> </a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -194,8 +243,8 @@
                         <div class="hit_item">
                             HIT
                         </div>
-                        <img src="img/psy_K210_tr 1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img src="img/psy_K210_tr 1.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -221,8 +270,8 @@
                         <div class="hit_item">
                             HIT
                         </div>
-                        <img class="item-img" src="img/omega_90 1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img class="item-img" src="img/omega_90 1.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -246,8 +295,8 @@
                         <div class="hit_item">
                             HIT
                         </div>
-                        <img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -298,7 +347,8 @@
         </div>
     </section>
 
-    <section class="block bestsellers_block bs-new">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" bestsellers_block bs-new">
         <div class="container">
             <h2 class="header_sec">Новинки</h2>
             <div class="bs_list">
@@ -309,8 +359,8 @@
                         <div class="hit_item hi-new">
                             NEW
                         </div>
-                        <img src="img/chlorella1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img src="img/chlorella1.png"></a>
+                        <a href="#"> <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -335,8 +385,8 @@
                         <div class="hit_item hi-new">
                             NEW
                         </div>
-                        <img src="img/psy_K210_tr 1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img src="img/psy_K210_tr 1.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -362,8 +412,8 @@
                         <div class="hit_item hi-new">
                             NEW
                         </div>
-                        <img class="item-img" src="img/omega_90 1.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img class="item-img" src="img/omega_90 1.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -387,8 +437,8 @@
                         <div class="hit_item hi-new">
                             NEW
                         </div>
-                        <img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png">
-                        <h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2>
+                        <a href="#"><img class="item-img" style="scale: 0.7" src="img/matcha cam kokocuk 02 2.png"></a>
+                        <a href="#"><h2 class="bs_header-item">Органические семена чиа для похудения и очищения организм 100/250/1000г</h2></a>
                         <span class="bs_price">1 417 руб.</span>
                         <div class="bs_buttons">
                             <a href="#" class="bs_btn-detail">Подробнее</a>
@@ -439,69 +489,70 @@
         </div>
     </section>
 
-    <section class="block site_elements">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" site_elements">
         <div class="container">
             <div class="site_elements-list">
 
-                <div class="site_element-left_item koo3">
+                <a href="#" class="site_element-left_item koo3">
                     <img src="img/Screenshot_1 1.png" alt="">
 
                     <div class="se_block1">
                         <h2 class="se_header">Вкусные рецепты</h2>
                         <span>от VeganNova</span>
-                        <a href="#"><img src="img/left-news.png" alt=""></a>
+                        <img src="img/left-news.png" alt="">
                     </div>
 
-                </div>
+                </a>
 
                 <div class="site_element-right_item mjjkjk23k1">
 
-                    <div class="site_element-left_item koo3 koioio3">
+                    <a href="#" class="site_element-left_item koo3 koioio3">
                         <img src="img/bac1.png" alt="">
     
                         <div class="se_block1">
                             <h2 class="se_header">7 полезных</h2>
                             <span>привычек для <br>
                                 стройности</span>
-                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                            <div href="#"><img src="img/left-news.png" alt=""></div>
                         </div>
     
-                    </div>
+                    </a>
 
-                    <div class="site_element-left_item koo3 koioio3">
+                    <a href="#" class="site_element-left_item koo3 koioio3">
                         <img src="img/bac2.png" alt="">
     
                         <div class="se_block1">
                             <h2 class="se_header">Добавки</h2>
                             <span>для иммунитета и красоты</span>
-                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                            <div href="#"><img src="img/left-news.png" alt=""></div>
                         </div>
     
-                    </div>
+                    </a>
 
                     
-                    <div class="site_element-left_item koo3 koioio3">
+                    <a href="#" class="site_element-left_item koo3 koioio3">
                         <img src="img/bac3.png" alt="">
     
                         <div class="se_block1">
                             <h2 class="se_header">Суперфуды</h2>
                             
-                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                            <div href="#"><img src="img/left-news.png" alt=""></div>
                         </div>
     
-                    </div>
+                    </a>
 
                     
-                    <div class="site_element-left_item koo3 koioio3">
+                    <a href="#" class="site_element-left_item koo3 koioio3">
                         <img src="img/bac4.png" alt="">
     
                         <div class="se_block1">
                             <h2 class="se_header">Спорт и диета</h2>
                      
-                            <a href="#"><img src="img/left-news.png" alt=""></a>
+                            <div ><img src="img/left-news.png" alt=""></div>
                         </div>
     
-                    </div>
+                    </a>
     
                 </div>
 
@@ -509,7 +560,8 @@
         </div>
     </section>
 
-    <section class="block reviews_block bs-new">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" reviews_block bs-new">
         <div class="container">
             <div class="reviews_slider">
                 <h2 class="header_sec">Отзывы покупателей</h2>
@@ -596,7 +648,7 @@
                             </div>
                             <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
                             <a class="reviewlink" href="#">Читать полностью</a>
-                            <img class="reviewimg" src="img/Vector (9).png">
+                             <a href="#"><img class="reviewimg" src="img/Vector (9).png"> </a>
                         </div>
                     </div>
 
@@ -619,7 +671,7 @@
                             </div>
                             <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
                             <a class="reviewlink" href="#">Читать полностью</a>
-                            <img class="reviewimg" src="img/Vector (9).png">
+                            <a href="#"><img class="reviewimg" src="img/Vector (9).png"> </a>
                         </div>
                     </div>
 
@@ -642,7 +694,7 @@
                             </div>
                             <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
                             <a class="reviewlink" href="#">Читать полностью</a>
-                            <img class="reviewimg" src="img/Vector (9).png">
+                            <a href="#"><img class="reviewimg" src="img/Vector (9).png"></a>
                         </div>
                     </div>
 
@@ -664,7 +716,7 @@
                             </div>
                             <p class="reviewtext">Очень хорошее средство и при запорах! И, кстати, у моего мужа даже слегка снизился сахар в крови! Спасибо Продавцу, товар...</p>
                             <a class="reviewlink" href="#">Читать полностью</a>
-                            <img class="reviewimg" src="img/Vector (9).png">
+                            <a href="#"> <img class="reviewimg" src="img/Vector (9).png"> </a>
                         </div>
                     </div>
 
@@ -675,7 +727,8 @@
     </section>
 
 
-    <section class="block veganova_club-block">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" veganova_club-block">
         <div class="container">
             <div class="veganova-bl">
                 <h2 class="header_sec">Клуб VeganNova</h2>
@@ -750,7 +803,8 @@
         </div>
     </section>
 
-    <section class="block contactform-site bs-new">
+    <section data-aos="fade-up"
+    data-aos-duration="1700" class=" contactform-site bs-new">
         <div class="container">
 
             <div class="contact-background_s">
@@ -783,7 +837,8 @@
         </div>
     </section>
 
-    <footer class="block">
+    <footer data-aos="fade-up"
+    data-aos-duration="1700" class="">
         <div class="container">
 
 
@@ -884,12 +939,14 @@ $('.banner_main-list').slick({
   speed: 300,
   slidesToShow: 1,
 
-
+  autoplay: true,
+      autoplaySpeed: 1500,
 });
 
 $('.list-reviews-rev').slick({
-
-
+    autoplay: true,
+    autoplaySpeed: 2100,
+  slidesToShow: 4,
 
   dots: true,
   infinite: true,
@@ -925,6 +982,8 @@ $('.bs_list').slick({
   arrow: true,
   infinite: true,
   speed: 300,
+  autoplay: true,
+      autoplaySpeed: 2100,
   slidesToShow: 4,
 
   prevArrow: '<div id="prev" type="button" class="btn btn-juliet"><img src="img/sliderleft.png"></div>',

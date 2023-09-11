@@ -2,6 +2,55 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
+
+.site_element-left_item:hover {
+    opacity: 0.7;
+}
+
+.stolbec_cat1{width: 231px;}
+.menu_nav-catalog li .stolbec_cat1 a {font-size: 14px;}
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-m1s {display: flex;}
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    top:18px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .menu_nav-catalog .stolbec_cat1  li {
+    margin-left: 11px;
+}
+
 a{text-decoration: none;}
 
 .category_first-catalog{
@@ -1217,6 +1266,22 @@ right: 0px;
 
 @media screen and (max-width: 780px){
 
+
+    .header_top-1 {
+        text-align: right;
+        font-weight: 700;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: absolute;
+        font-size: 12px;
+        top: 13px;
+        right: 11px;
+    }
+
+    .banner_top-main {display: none;}
+
+    .site_element-left_item > img {width: 100%;}
+
     .detail2323 .list_element_imgs {
         width: 100%;
     }
@@ -1270,13 +1335,67 @@ right: 0px;
     top: 50%;
     content: url(../img/cal.png);
 }
+.sort_type-block.active {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
 
+
+.menu_catalog_list-mob-detail.active{display: block;}
+.sort_type-block { margin-top: 20px; display: none;}
+.mobile_button-filter{display: none;}
+.dsadass231423433{display: none;}
 @media screen and (max-width: 780px){
 
+    .peregorodkamob{display: none;}
+.catalog-filter-conMob {margin-bottom: 0px;}
+.peregorodkamob.active{display: block;}
+
+
+    .menu_catalog_list-mob-detail{display: none;}
+    .gallery_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+        justify-content: center;
+    }
+
+    .dsadass2314234.yy7 {display: none;}
+.asidemob.active{display: block;}
+
+    .dsadass2314234{display: flex;justify-content: space-between;}
+
+    .asidemob{display: none;}
+
+    .mobile_button-filter{display: block;}
+
+
+   body  footer .container {display: block;}
+    .contacts_block{width: 46%;
+        /* display: table-column; */
+        display: block;
+        float: left;}
+        .main_items-menu-footer_block {
+            width: 46%;
+            display: inline-block;
+            text-align: center;
+        }
     .market_item {
         margin-left: 5px;
     }
-
+    .wherebuy-block {
+        width: 240px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .lets_friend-block {
+        width: 280px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
     .market_item span{font-size: 12px;}
 
     .item_user-nav span{ font-size: 14px;}
